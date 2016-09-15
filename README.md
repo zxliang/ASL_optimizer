@@ -26,4 +26,8 @@ Note 11: In version 13, recalculation of delays related to the sized gates is ad
 Note 12 (Aug. 11, 2015): This program is used to generate data in JxCDC manuscript in Aug. 8, 2015. Three sets of technology parameters were used with the [double SpacingDis (from mylib.cpp)] parameter set to the same value as the corresponding spin diffusion lengths in the gate.h. For fast simulation speed, calculation and output of Power and Area is disabled by commenting function [vector<double> PowerArea = PowerAreaCalc(gate_vec0);] in row 653 of mylib.cpp and turn off the output line a few rows later [outfile<<CURRENT_ITERATION+1<<" "<<MaxDelay0<<" "<<PowerArea[0]<<" "<<PowerArea[1]<<endl;]. 
 
 
-Note 13 (Oct. 16, 2015): New models considering the contacts and grounds were added to the delay calculation part.
+Note 13 (Oct. 16, 2015): New models considering the contacts and grounds were added to the delay calculation part.o
+
+Note 14 copying a clone to local
+
+

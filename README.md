@@ -5,9 +5,16 @@ Author: Zhaoxin Liang @ University of Minnesota - Twin Cities, VLSI - EDA group.
 
 Description: This repository contains C++ souce codes for the ASL geometric optimizer.
 
-Version: 1.0
+Version: 1.0 (Previous to Oct. 01, 2017)
 
 License: by Zhaoxin Liang
+
+--------------------------
+
+Note 15 (Oct. 1, 2017): Reformatted the README.md and added ISCAS benchmarks to the repository. 
+
+--------------------------
+> Change logs previous to Oct. 01, 2017, as history reference only
 
 Note 1: Created for ICCAD 2015 submission.
 
@@ -39,6 +46,5 @@ Note 13 (Oct. 16, 2015): New models considering the contacts and grounds were ad
 
 Note 14: copying a clone to local.
 
-Note 15 (Oct. 1, 2017): Reformatted the README.md and added ISCAS benchmarks to the repository. 
 
 

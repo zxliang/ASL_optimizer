@@ -11,7 +11,11 @@ License: by Zhaoxin Liang
 
 --------------------------
 
-Note 15 (Oct. 1, 2017): Reformatted the README.md and added ISCAS benchmarks to the repository. 
+Note 15 (Oct. 1, 2017): 
+
+1. Reformatted the README.md and added ISCAS benchmarks to the repository. 
+
+2. Created a bash version execution script as iscas_benchmarks.sh
 
 --------------------------
 

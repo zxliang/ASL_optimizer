@@ -10,7 +10,7 @@ echo "Compilation success"
 mkdir -p ./results
 
 echo "Optimizing 17"
-./asloptimizer ../iscas/10nm_ASL.genlib ../iscas/C17_mapped.blif ../iscas/C17out200.pl ./results/C17ED.txt > ./results/C17_450.txt
+./asloptimizer ../iscas/10nm_ASL.genlib ./iscas/C17_mapped.blif ./iscas/C17out200.pl ./results/C17ED.txt > ./results/C17_450.txt
 echo "C17 optimization finished!"
 
 

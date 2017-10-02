@@ -2,17 +2,15 @@
 An optimizer for perform TILOS-like algorithm for energy/delay trade-offs in ASL circuits
 ==========================
 
-Author: Zhaoxin Liang @ University of Minnesota - Twin Cities, VLSI - EDA group
-Description: This repository contains C++ souce codes for the ASL geometric optimizer
+Author: Zhaoxin Liang @ University of Minnesota - Twin Cities, VLSI - EDA group.
+Description: This repository contains C++ souce codes for the ASL geometric optimizer.
 Version: 1.0
 License: by Zhaoxin Liang
 
-Note 1: Created for ICCAD 2015 submission
+Note 1: Created for ICCAD 2015 submission.
 Note 2: Version 1.0 uses Eigen: http://eigen.tuxfamily.org/index.php?title=Main_Page for matrix computation in MNA.cpp.
-Note 3: test sync.
-
-
-Note 4: v6 does not include incremental timing analysis, it is included in v5
+Note 3: Sync tested.
+Note 4: v6 does not include incremental timing analysis, it is included in v5.
 Note 5: v7 removed the STA performance in every TILOS iterations.
 Note 6: v8 added incremental timing analysis back
 Note 7: The "same delay reduction flag" is removed in v9, yet the STA is recovered for the evaluation after each adaption.

@@ -1,0 +1,117 @@
+#*********Start edit by Meg: 
+#Obtained from some document online
+#A cell is specified in the following format:
+# GATE <cell-name> <cell-area> <cell-logic-function>
+# <pin-info>
+#   :
+#   :
+# <pin-info>
+#First iteration:- CAUTION: READ THIS BEFORE YOU PROCEED
+#Assumption: For All Spin Logic (ASL): Rise delay = fall delay
+# Here delay is defined as the time taken by the magnet to switch from +1 to -1 of its easy axis: Needs a more concrete definition. LIFE IS SIMPLER SO FAR 
+# (i)   Very small input load cap
+# (ii)  maximum load a cell can drive is kept the same as in the CMOS case. More study is needed to determine the same number for ASL
+# (iii) The delay so far remains unchanged for the number of loads. Again comprehensive study needed 
+#
+#************************End edit by Meg
+## PIN <pin-name> <phase> <input-load> <max-load>
+## <rise-block-delay> <rise-fanout-delay>
+## <fall-block-delay> <fall-fanout-delay>
+
+#Delays measured using 2-component model 
+#   Gate             Delay(ns)
+#  AND2_X1						1.087
+#  AND2_X2						0.642
+#  AND2_X4						0.599
+#  AND2_X8						0.563
+#  
+#  AND3_X1						1.49
+#  AND3_X2						1.75
+#  AND3_X4						2.05
+#  AND3_X8						1.89
+#	 
+#	 AND4_X1						1.59
+#	 AND4_X2						1.79
+#  AND4_X4						1.32
+#  AND4_X8 						1.098
+	
+
+#INV gates
+#TO-DO: Cannot seem to find the delay for inverter. Rerun the MATLAB code.0.90000 is inaccurate. 
+
+
+
+
+#NAND2X gates
+GATE na2a0 6000 O = !(a * b);
+PIN a INV 0.0001 25 1.087000 1.087000 1.087000 1.087000  
+PIN b INV 0.0001 25 1.087000 1.087000 1.087000 1.087000
+GATE na2b0 6000 O = !(a * b);
+PIN a INV 0.0001 25 0.642000 0.642000 0.642000 0.642000
+PIN b INV 0.0001 25 0.642000 0.642000 0.642000 0.642000
+GATE na2c0 6000 O = !(a * b);
+PIN a INV 0.0001 25 0.599000 0.599000 0.599000 0.599000
+PIN b INV 0.0001 25 0.599000 0.599000 0.599000 0.599000
+GATE na2d0 6000 O = !(a * b);
+PIN a INV 0.0001 25 0.563000 0.563000 0.563000 0.563000
+PIN b INV 0.0001 25 0.563000 0.563000 0.563000 0.563000
+
+
+
+#NO2 GATES
+GATE no2a0 6000 O = !(a + b);
+PIN a INV 0.0001 30 1.087000 1.087000 1.087000 1.087000
+PIN b INV 0.0001 30 1.087000 1.087000 1.087000 1.087000
+GATE no2b0 6000 O = !(a + b);
+PIN a INV 0.0001 30 0.642000 0.642000 0.642000 0.642000
+PIN b INV 0.0001 30 0.642000 0.642000 0.642000 0.642000
+GATE no2c0 6000 O= !(a + b);
+PIN a INV 0.0001 30 0.599000 0.599000 0.599000 0.599000
+PIN b INV 0.0001 30 0.599000 0.599000 0.599000 0.599000
+GATE no2d0 6000 O= !(a + b);
+PIN a INV 0.0001 30 0.563000 0.563000 0.563000 0.563000
+PIN b INV 0.0001 30 0.563000 0.563000 0.563000 0.563000
+
+#NA3
+GATE na3a0 6000 O = ! (a * b *c);
+PIN a INV 0.0001 30 1.4900000 1.490000 1.4900000 1.490000
+PIN b INV 0.0001 30 1.4900000 1.490000 1.4900000 1.490000
+PIN c INV 0.0001 30 1.4900000 1.490000 1.4900000 1.490000
+GATE na3b0 6000 O = ! (a * b *c);
+PIN a INV 0.0001 30 1.7500000 1.750000 1.7500000 1.750000
+PIN b INV 0.0001 30 1.7500000 1.750000 1.7500000 1.750000
+PIN c INV 0.0001 30 1.7500000 1.750000 1.7500000 1.750000
+GATE na3c0 6000 O = ! (a * b *c);
+PIN a INV 0.0001 30 2.0500000 2.050000 2.0500000 2.050000
+PIN b INV 0.0001 30 2.0500000 2.050000 2.0500000 2.050000
+PIN c INV 0.0001 30 2.0500000 2.050000 2.0500000 2.050000
+GATE na3d0 6000 O = ! (a * b *c);
+PIN a INV 0.0001 30 1.8900000 1.890000 1.8900000 1.890000
+PIN b INV 0.0001 30 1.8900000 1.890000 1.8900000 1.890000
+PIN c INV 0.0001 30 1.8900000 1.890000 1.8900000 1.890000
+
+##BUF
+
+GATE bufa0 6000 O = a;
+PIN a NONINV 0.0001 25 0.900000 0.900000 0.900000 0.900000
+GATE bufb0 6000 O = !a;
+PIN a NONINV 0.0001 25 0.800000 0.800000 0.800000 0.800000
+GATE bufc0 6000 O = !a;
+PIN a NONINV 0.0001 25 0.700000 0.700000 0.700000 0.700000
+GATE bufd0 6000 O = !a;
+PIN a NONINV 0.0001 25 0.600000 0.600000 0.600000 0.600000
+
+
+
+##NOT gates
+GATE nota0 6000 O = !a;
+PIN a INV 0.0001 30 0.900000 0.900000 0.900000 0.900000
+GATE notb0 6000 O = !a;
+PIN a INV 0.0001 30 0.800000 0.800000 0.800000 0.800000
+GATE notc0 6000 O = !a;
+PIN a INV 0.0001 30 0.700000 0.700000 0.700000 0.700000
+GATE notd0 6000 O = !a;
+PIN a INV 0.0001 30 0.600000 0.600000 0.600000 0.600000
+
+GATE ZERO 0 O=CONST0;
+GATE ONE 0 O=CONST1;

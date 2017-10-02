@@ -21,4 +21,4 @@ main.o: main.cpp gate.h
 	g++ -c main.cpp -std=c++11
 
 clean:
-	rm -f main main.o mylib.o support.o MNA.o delay.o STA.o sizing.o EPA.o delaycalc.o
+	rm -f asloptimizer main main.o mylib.o support.o MNA.o delay.o STA.o sizing.o EPA.o delaycalc.o

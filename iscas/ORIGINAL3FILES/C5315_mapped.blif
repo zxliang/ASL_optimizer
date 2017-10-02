@@ -1,0 +1,1747 @@
+# Benchmark "C5315.iscas" written by ABC on Mon Apr 13 19:19:14 2015
+.model C5315.iscas
+.inputs 1[0] 4[1] 11[2] 14[3] 17[4] 20[5] 23[6] 24[7] 25[8] 26[9] 27[10] \
+ 31[11] 34[12] 37[13] 40[14] 43[15] 46[16] 49[17] 52[18] 53[19] 54[20] \
+ 61[21] 64[22] 67[23] 70[24] 73[25] 76[26] 79[27] 80[28] 81[29] 82[30] \
+ 83[31] 86[32] 87[33] 88[34] 91[35] 94[36] 97[37] 100[38] 103[39] 106[40] \
+ 109[41] 112[42] 113[43] 114[44] 115[45] 116[46] 117[47] 118[48] 119[49] \
+ 120[50] 121[51] 122[52] 123[53] 126[54] 127[55] 128[56] 129[57] 130[58] \
+ 131[59] 132[60] 135[61] 136[62] 137[63] 140[64] 141[65] 145[66] 146[67] \
+ 149[68] 152[69] 155[70] 158[71] 161[72] 164[73] 167[74] 170[75] 173[76] \
+ 176[77] 179[78] 182[79] 185[80] 188[81] 191[82] 194[83] 197[84] 200[85] \
+ 203[86] 206[87] 209[88] 210[89] 217[90] 218[91] 225[92] 226[93] 233[94] \
+ 234[95] 241[96] 242[97] 245[98] 248[99] 251[100] 254[101] 257[102] \
+ 264[103] 265[104] 272[105] 273[106] 280[107] 281[108] 288[109] 289[110] \
+ 292[111] 293[112] 299[113] 302[114] 307[115] 308[116] 315[117] 316[118] \
+ 323[119] 324[120] 331[121] 332[122] 335[123] 338[124] 341[125] 348[126] \
+ 351[127] 358[128] 361[129] 366[130] 369[131] 372[132] 373[133] 374[134] \
+ 386[135] 389[136] 400[137] 411[138] 422[139] 435[140] 446[141] 457[142] \
+ 468[143] 479[144] 490[145] 503[146] 514[147] 523[148] 534[149] 545[150] \
+ 549[151] 552[152] 556[153] 559[154] 562[155] 1497[156] 1689[157] 1690[158] \
+ 1691[159] 1694[160] 2174[161] 2358[162] 2824[163] 3173[164] 3546[165] \
+ 3548[166] 3550[167] 3552[168] 3717[169] 3724[170] 4087[171] 4088[172] \
+ 4089[173] 4090[174] 4091[175] 4092[176] 4115[177]
+.outputs 144[354] 298[299] 973[202] 594[224] 599[269] 600[259] 601[220] \
+ 602[222] 603[225] 604[223] 611[275] 612[263] 810[356] 848[330] 849[219] \
+ 850[217] 851[218] 634[665] 815[627] 845[845] 847[465] 926[624] 923[619] \
+ 921[664] 892[408] 887[528] 606[407] 656[621] 809[655] 993[850] 978[851] \
+ 949[852] 939[853] 889[734] 593[733] 636[1280] 704[1281] 717[1282] \
+ 820[1283] 639[1275] 673[1276] 707[1277] 715[1278] 598[1623] 610[1519] \
+ 588[1696] 615[1750] 626[1752] 632[1692] 1002[1920] 1004[1977] 591[1894] \
+ 618[1925] 621[1893] 629[1926] 822[1933] 838[2064] 861[2070] 623[2152] \
+ 722[2131] 832[2133] 834[2123] 836[2128] 859[2132] 871[2127] 873[2124] \
+ 875[2125] 877[2126] 998[2163] 1000[2168] 575[2240] 585[2236] 661[2178] \
+ 693[2179] 747[2187] 752[2189] 757[2190] 762[2184] 787[2186] 792[2188] \
+ 797[2191] 802[2183] 642[2222] 664[2223] 667[2224] 670[2225] 676[2229] \
+ 696[2226] 699[2227] 702[2228] 818[2273] 813[2260] 824[2274] 826[2275] \
+ 828[2233] 830[2182] 854[2268] 863[2276] 865[2277] 867[2237] 869[2181] \
+ 712[2297] 727[2298] 732[2300] 737[2279] 742[2238] 772[2299] 777[2278] \
+ 782[2239] 645[2271] 648[2295] 651[2314] 654[2315] 679[2272] 682[2296] \
+ 685[2316] 688[2317] 843[2455] 882[2456] 767[2479] 807[2480] 658[2483] \
+ 690[2484]
+.gate nota0 a=545[150] O=594[224]
+.gate nota0 a=348[126] O=599[269]
+.gate nota0 a=366[130] O=600[259]
+.gate nota0 a=552[152] O=849[219]
+.gate nota0 a=562[155] O=850[217]
+.gate no2a0 a=850[217] b=849[219] O=601[220]
+.gate nota0 a=549[151] O=602[222]
+.gate nota0 a=338[124] O=611[275]
+.gate nota0 a=358[128] O=612[263]
+.gate nota0 a=141[65] O=n311
+.gate nota0 a=145[66] O=n312
+.gate no2a0 a=n312 b=n311 O=810[356]
+.gate nota0 a=245[98] O=848[330]
+.gate nota0 a=559[154] O=851[218]
+.gate nota0 a=1[0] O=n316
+.gate nota0 a=373[133] O=n317
+.gate no2a0 a=n317 b=n316 O=634[665]
+.gate nota0 a=136[62] O=n319
+.gate no2a0 a=3173[164] b=n319 O=815[627]
+.gate nota0 a=2824[163] O=n321
+.gate na2a0 a=n321 b=27[10] O=845[845]
+.gate na2a0 a=556[153] b=386[135] O=847[465]
+.gate na2a0 a=31[11] b=27[10] O=809[655]
+.gate nota0 a=809[655] O=n325
+.gate na2a0 a=n325 b=140[64] O=656[621]
+.gate nota0 a=299[113] O=593[733]
+.gate nota0 a=87[33] O=n328
+.gate na2a0 a=2358[162] b=n328 O=n329
+.gate no2a0 a=2358[162] b=86[32] O=n330
+.gate no2a0 a=n330 b=809[655] O=n331
+.gate na2a0 a=n331 b=n329 O=636[1280]
+.gate nota0 a=34[12] O=n333
+.gate na2a0 a=2358[162] b=n333 O=n334
+.gate no2a0 a=2358[162] b=88[34] O=n335
+.gate no2a0 a=n335 b=809[655] O=n336
+.gate na2a0 a=n336 b=n334 O=704[1281]
+.gate na2a0 a=n325 b=83[31] O=820[1283]
+.gate nota0 a=24[7] O=n339
+.gate no2a0 a=2358[162] b=n339 O=n340
+.gate na2a0 a=2358[162] b=25[8] O=n341
+.gate na2a0 a=n341 b=n325 O=n342
+.gate no2a0 a=n342 b=n340 O=n343
+.gate no2a0 a=n343 b=n311 O=639[1275]
+.gate nota0 a=26[9] O=n345
+.gate no2a0 a=2358[162] b=n345 O=n346
+.gate na2a0 a=2358[162] b=81[29] O=n347
+.gate na2a0 a=n347 b=n325 O=n348
+.gate no2a0 a=n348 b=n346 O=n349
+.gate no2a0 a=n349 b=n311 O=673[1276]
+.gate nota0 a=79[27] O=n351
+.gate no2a0 a=2358[162] b=n351 O=n352
+.gate na2a0 a=2358[162] b=23[6] O=n353
+.gate na2a0 a=n353 b=n325 O=n354
+.gate no2a0 a=n354 b=n352 O=n355
+.gate no2a0 a=n355 b=n311 O=707[1277]
+.gate nota0 a=82[30] O=n357
+.gate no2a0 a=2358[162] b=n357 O=n358
+.gate na2a0 a=2358[162] b=80[28] O=n359
+.gate na2a0 a=n359 b=n325 O=n360
+.gate no2a0 a=n360 b=n358 O=n361
+.gate no2a0 a=n361 b=n311 O=715[1278]
+.gate nota0 a=254[101] O=n363
+.gate no2a0 a=308[116] b=n363 O=n364
+.gate nota0 a=479[144] O=n365
+.gate na2a0 a=308[116] b=242[97] O=n366
+.gate na2a0 a=n366 b=n365 O=n367
+.gate no2a0 a=n367 b=n364 O=n368
+.gate nota0 a=308[116] O=n369
+.gate no2a0 a=n369 b=248[99] O=n370
+.gate nota0 a=251[100] O=n371
+.gate na2a0 a=n369 b=n371 O=n372
+.gate na2a0 a=n372 b=479[144] O=n373
+.gate no2a0 a=n373 b=n370 O=n374
+.gate no2a0 a=n374 b=n368 O=n375
+.gate nota0 a=n375 O=n376
+.gate nota0 a=514[147] O=n377
+.gate no2a0 a=3552[168] b=n377 O=n378
+.gate nota0 a=3546[165] O=n379
+.gate no2a0 a=n379 b=514[147] O=n380
+.gate no2a0 a=n380 b=n378 O=n381
+.gate nota0 a=242[97] O=n382
+.gate nota0 a=293[112] O=n383
+.gate no2a0 a=n383 b=n382 O=n384
+.gate no2a0 a=293[112] b=n363 O=n385
+.gate no2a0 a=n385 b=n384 O=n386
+.gate nota0 a=n386 O=n387
+.gate no2a0 a=n387 b=n381 O=n388
+.gate nota0 a=248[99] O=n389
+.gate nota0 a=361[129] O=n390
+.gate no2a0 a=n390 b=n389 O=n391
+.gate no2a0 a=361[129] b=n371 O=n392
+.gate no2a0 a=n392 b=n391 O=n393
+.gate nota0 a=302[114] O=n394
+.gate no2a0 a=n394 b=n389 O=n395
+.gate no2a0 a=302[114] b=n371 O=n396
+.gate no2a0 a=n396 b=n395 O=n397
+.gate no2a0 a=n397 b=n393 O=n398
+.gate na3a0 a=n398 b=n388 c=n376 O=n399
+.gate no2a0 a=3548[166] b=351[127] O=n400
+.gate nota0 a=534[149] O=n401
+.gate na2a0 a=n379 b=351[127] O=n402
+.gate na2a0 a=n402 b=n401 O=n403
+.gate no2a0 a=n403 b=n400 O=n404
+.gate nota0 a=351[127] O=n405
+.gate nota0 a=3552[168] O=n406
+.gate no2a0 a=n406 b=n405 O=n407
+.gate na2a0 a=3550[167] b=n405 O=n408
+.gate na2a0 a=n408 b=534[149] O=n409
+.gate no2a0 a=n409 b=n407 O=n410
+.gate no2a0 a=n410 b=n404 O=n411
+.gate no2a0 a=3548[166] b=324[120] O=n412
+.gate nota0 a=503[146] O=n413
+.gate na2a0 a=n379 b=324[120] O=n414
+.gate na2a0 a=n414 b=n413 O=n415
+.gate no2a0 a=n415 b=n412 O=n416
+.gate nota0 a=324[120] O=n417
+.gate no2a0 a=n406 b=n417 O=n418
+.gate na2a0 a=3550[167] b=n417 O=n419
+.gate na2a0 a=n419 b=503[146] O=n420
+.gate no2a0 a=n420 b=n418 O=n421
+.gate no2a0 a=n421 b=n416 O=n422
+.gate no2a0 a=n422 b=n411 O=n423
+.gate no2a0 a=316[118] b=n363 O=n424
+.gate nota0 a=490[145] O=n425
+.gate na2a0 a=316[118] b=242[97] O=n426
+.gate na2a0 a=n426 b=n425 O=n427
+.gate no2a0 a=n427 b=n424 O=n428
+.gate nota0 a=316[118] O=n429
+.gate no2a0 a=n429 b=248[99] O=n430
+.gate na2a0 a=n429 b=n371 O=n431
+.gate na2a0 a=n431 b=490[145] O=n432
+.gate no2a0 a=n432 b=n430 O=n433
+.gate no2a0 a=n433 b=n428 O=n434
+.gate nota0 a=n434 O=n435
+.gate no2a0 a=3548[166] b=341[125] O=n436
+.gate nota0 a=523[148] O=n437
+.gate na2a0 a=n379 b=341[125] O=n438
+.gate na2a0 a=n438 b=n437 O=n439
+.gate no2a0 a=n439 b=n436 O=n440
+.gate nota0 a=341[125] O=n441
+.gate no2a0 a=n406 b=n441 O=n442
+.gate na2a0 a=3550[167] b=n441 O=n443
+.gate na2a0 a=n443 b=523[148] O=n444
+.gate no2a0 a=n444 b=n442 O=n445
+.gate no2a0 a=n445 b=n440 O=n446
+.gate nota0 a=n446 O=n447
+.gate na3a0 a=n447 b=n435 c=n423 O=n448
+.gate no2a0 a=n448 b=n399 O=598[1623]
+.gate no2a0 a=3548[166] b=218[91] O=n450
+.gate nota0 a=468[143] O=n451
+.gate na2a0 a=n379 b=218[91] O=n452
+.gate na2a0 a=n452 b=n451 O=n453
+.gate no2a0 a=n453 b=n450 O=n454
+.gate nota0 a=218[91] O=n455
+.gate no2a0 a=n451 b=n455 O=n456
+.gate na2a0 a=n456 b=n406 O=n457
+.gate nota0 a=3550[167] O=n458
+.gate no2a0 a=n451 b=218[91] O=n459
+.gate na2a0 a=n459 b=n458 O=n460
+.gate na2a0 a=n460 b=n457 O=n461
+.gate no2a0 a=n461 b=n454 O=n462
+.gate nota0 a=n462 O=n463
+.gate no2a0 a=3548[166] b=265[104] O=n464
+.gate nota0 a=400[137] O=n465
+.gate na2a0 a=n379 b=265[104] O=n466
+.gate na2a0 a=n466 b=n465 O=n467
+.gate no2a0 a=n467 b=n464 O=n468
+.gate nota0 a=265[104] O=n469
+.gate no2a0 a=n406 b=n469 O=n470
+.gate na2a0 a=3550[167] b=n469 O=n471
+.gate na2a0 a=n471 b=400[137] O=n472
+.gate no2a0 a=n472 b=n470 O=n473
+.gate no2a0 a=n473 b=n468 O=n474
+.gate nota0 a=n474 O=n475
+.gate no2a0 a=3548[166] b=257[102] O=n476
+.gate nota0 a=389[136] O=n477
+.gate na2a0 a=n379 b=257[102] O=n478
+.gate na2a0 a=n478 b=n477 O=n479
+.gate no2a0 a=n479 b=n476 O=n480
+.gate nota0 a=257[102] O=n481
+.gate no2a0 a=n406 b=n481 O=n482
+.gate na2a0 a=3550[167] b=n481 O=n483
+.gate na2a0 a=n483 b=389[136] O=n484
+.gate no2a0 a=n484 b=n482 O=n485
+.gate no2a0 a=n485 b=n480 O=n486
+.gate nota0 a=n486 O=n487
+.gate na3a0 a=n487 b=n475 c=n463 O=n488
+.gate no2a0 a=3548[166] b=226[93] O=n489
+.gate nota0 a=422[139] O=n490
+.gate na2a0 a=n379 b=226[93] O=n491
+.gate na2a0 a=n491 b=n490 O=n492
+.gate no2a0 a=n492 b=n489 O=n493
+.gate nota0 a=226[93] O=n494
+.gate no2a0 a=n490 b=n494 O=n495
+.gate na2a0 a=n495 b=n406 O=n496
+.gate no2a0 a=n490 b=226[93] O=n497
+.gate na2a0 a=n497 b=n458 O=n498
+.gate na2a0 a=n498 b=n496 O=n499
+.gate no2a0 a=n499 b=n493 O=n500
+.gate no2a0 a=3548[166] b=210[89] O=n501
+.gate nota0 a=457[142] O=n502
+.gate na2a0 a=n379 b=210[89] O=n503
+.gate na2a0 a=n503 b=n502 O=n504
+.gate no2a0 a=n504 b=n501 O=n505
+.gate nota0 a=210[89] O=n506
+.gate no2a0 a=n502 b=n506 O=n507
+.gate na2a0 a=n507 b=n406 O=n508
+.gate no2a0 a=n502 b=210[89] O=n509
+.gate na2a0 a=n509 b=n458 O=n510
+.gate na2a0 a=n510 b=n508 O=n511
+.gate no2a0 a=n511 b=n505 O=n512
+.gate no2a0 a=n512 b=n500 O=n513
+.gate no2a0 a=3548[166] b=281[108] O=n514
+.gate nota0 a=374[134] O=n515
+.gate na2a0 a=n379 b=281[108] O=n516
+.gate na2a0 a=n516 b=n515 O=n517
+.gate no2a0 a=n517 b=n514 O=n518
+.gate nota0 a=281[108] O=n519
+.gate no2a0 a=n406 b=n519 O=n520
+.gate na2a0 a=3550[167] b=n519 O=n521
+.gate na2a0 a=n521 b=374[134] O=n522
+.gate no2a0 a=n522 b=n520 O=n523
+.gate no2a0 a=n523 b=n518 O=n524
+.gate no2a0 a=3548[166] b=234[95] O=n525
+.gate nota0 a=435[140] O=n526
+.gate na2a0 a=n379 b=234[95] O=n527
+.gate na2a0 a=n527 b=n526 O=n528
+.gate no2a0 a=n528 b=n525 O=n529
+.gate nota0 a=234[95] O=n530
+.gate no2a0 a=n526 b=n530 O=n531
+.gate na2a0 a=n531 b=n406 O=n532
+.gate no2a0 a=n526 b=234[95] O=n533
+.gate na2a0 a=n533 b=n458 O=n534
+.gate na2a0 a=n534 b=n532 O=n535
+.gate no2a0 a=n535 b=n529 O=n536
+.gate no2a0 a=n536 b=n524 O=n537
+.gate no2a0 a=n363 b=206[87] O=n538
+.gate nota0 a=446[141] O=n539
+.gate na2a0 a=242[97] b=206[87] O=n540
+.gate na2a0 a=n540 b=n539 O=n541
+.gate no2a0 a=n541 b=n538 O=n542
+.gate nota0 a=206[87] O=n543
+.gate no2a0 a=248[99] b=n543 O=n544
+.gate na2a0 a=n371 b=n543 O=n545
+.gate na2a0 a=n545 b=446[141] O=n546
+.gate no2a0 a=n546 b=n544 O=n547
+.gate no2a0 a=n547 b=n542 O=n548
+.gate no2a0 a=3548[166] b=273[106] O=n549
+.gate nota0 a=411[138] O=n550
+.gate na2a0 a=n379 b=273[106] O=n551
+.gate na2a0 a=n551 b=n550 O=n552
+.gate no2a0 a=n552 b=n549 O=n553
+.gate nota0 a=273[106] O=n554
+.gate no2a0 a=n406 b=n554 O=n555
+.gate na2a0 a=3550[167] b=n554 O=n556
+.gate na2a0 a=n556 b=411[138] O=n557
+.gate no2a0 a=n557 b=n555 O=n558
+.gate no2a0 a=n558 b=n553 O=n559
+.gate no2a0 a=n559 b=n548 O=n560
+.gate na3a0 a=n560 b=n537 c=n513 O=n561
+.gate no2a0 a=n561 b=n488 O=610[1519]
+.gate no2a0 a=335[123] b=n543 O=n563
+.gate na2a0 a=335[123] b=209[88] O=n564
+.gate nota0 a=n564 O=n565
+.gate no2a0 a=n565 b=n563 O=n566
+.gate no2a0 a=n566 b=446[141] O=n567
+.gate nota0 a=n566 O=n568
+.gate no2a0 a=n568 b=n539 O=n569
+.gate no2a0 a=n569 b=n567 O=n570
+.gate no2a0 a=335[123] b=n506 O=n571
+.gate na2a0 a=335[123] b=217[90] O=n572
+.gate nota0 a=n572 O=n573
+.gate no2a0 a=n573 b=n571 O=n574
+.gate no2a0 a=n574 b=457[142] O=n575
+.gate nota0 a=n574 O=n576
+.gate no2a0 a=n576 b=n502 O=n577
+.gate no2a0 a=n577 b=n575 O=n578
+.gate no2a0 a=335[123] b=n455 O=n579
+.gate na2a0 a=335[123] b=225[92] O=n580
+.gate nota0 a=n580 O=n581
+.gate no2a0 a=n581 b=n579 O=n582
+.gate no2a0 a=n582 b=468[143] O=n583
+.gate nota0 a=n582 O=n584
+.gate no2a0 a=n584 b=n451 O=n585
+.gate no2a0 a=n585 b=n583 O=n586
+.gate no2a0 a=335[123] b=n494 O=n587
+.gate na2a0 a=335[123] b=233[94] O=n588
+.gate nota0 a=n588 O=n589
+.gate no2a0 a=n589 b=n587 O=n590
+.gate no2a0 a=n590 b=n490 O=n591
+.gate nota0 a=n590 O=n592
+.gate no2a0 a=n592 b=422[139] O=n593
+.gate no2a0 a=n593 b=n591 O=n594
+.gate nota0 a=n594 O=n595
+.gate no2a0 a=n595 b=n586 O=n596
+.gate nota0 a=n596 O=n597
+.gate no2a0 a=n597 b=n578 O=n598
+.gate nota0 a=n598 O=n599
+.gate no2a0 a=n599 b=n570 O=n600
+.gate nota0 a=n600 O=n601
+.gate no2a0 a=335[123] b=n530 O=n602
+.gate na2a0 a=335[123] b=241[96] O=n603
+.gate nota0 a=n603 O=n604
+.gate no2a0 a=n604 b=n602 O=n605
+.gate no2a0 a=n605 b=435[140] O=n606
+.gate nota0 a=n605 O=n607
+.gate no2a0 a=n607 b=n526 O=n608
+.gate no2a0 a=n608 b=n606 O=n609
+.gate no2a0 a=335[123] b=n481 O=n610
+.gate na2a0 a=335[123] b=264[103] O=n611
+.gate nota0 a=n611 O=n612
+.gate no2a0 a=n612 b=n610 O=n613
+.gate no2a0 a=n613 b=389[136] O=n614
+.gate nota0 a=n613 O=n615
+.gate no2a0 a=n615 b=n477 O=n616
+.gate no2a0 a=n616 b=n614 O=n617
+.gate no2a0 a=335[123] b=n519 O=n618
+.gate na2a0 a=335[123] b=288[109] O=n619
+.gate nota0 a=n619 O=n620
+.gate no2a0 a=n620 b=n618 O=n621
+.gate no2a0 a=n621 b=374[134] O=n622
+.gate nota0 a=n621 O=n623
+.gate no2a0 a=n623 b=n515 O=n624
+.gate no2a0 a=n624 b=n622 O=n625
+.gate nota0 a=335[123] O=n626
+.gate na2a0 a=n626 b=273[106] O=n627
+.gate na2a0 a=335[123] b=280[107] O=n628
+.gate na2a0 a=n628 b=n627 O=n629
+.gate na2a0 a=n629 b=n550 O=n630
+.gate no2a0 a=335[123] b=n554 O=n631
+.gate nota0 a=280[107] O=n632
+.gate no2a0 a=n626 b=n632 O=n633
+.gate no2a0 a=n633 b=n631 O=n634
+.gate na2a0 a=n634 b=411[138] O=n635
+.gate na2a0 a=n635 b=n630 O=n636
+.gate na2a0 a=n626 b=265[104] O=n637
+.gate na2a0 a=335[123] b=272[105] O=n638
+.gate na2a0 a=n638 b=n637 O=n639
+.gate na2a0 a=n639 b=n465 O=n640
+.gate no2a0 a=335[123] b=n469 O=n641
+.gate nota0 a=272[105] O=n642
+.gate no2a0 a=n626 b=n642 O=n643
+.gate no2a0 a=n643 b=n641 O=n644
+.gate na2a0 a=n644 b=400[137] O=n645
+.gate na2a0 a=n645 b=n640 O=n646
+.gate na2a0 a=n646 b=n636 O=n647
+.gate no2a0 a=n647 b=n625 O=n648
+.gate nota0 a=n648 O=n649
+.gate no2a0 a=n649 b=n617 O=n650
+.gate nota0 a=n650 O=n651
+.gate no2a0 a=n651 b=n609 O=n652
+.gate nota0 a=n652 O=n653
+.gate no2a0 a=n653 b=n601 O=588[1696]
+.gate no2a0 a=n441 b=332[122] O=n655
+.gate nota0 a=332[122] O=n656
+.gate no2a0 a=599[269] b=n656 O=n657
+.gate no2a0 a=n657 b=n655 O=n658
+.gate nota0 a=n658 O=n659
+.gate no2a0 a=n659 b=n437 O=n660
+.gate no2a0 a=n658 b=523[148] O=n661
+.gate no2a0 a=n661 b=n660 O=n662
+.gate no2a0 a=n390 b=332[122] O=n663
+.gate no2a0 a=600[259] b=n656 O=n664
+.gate no2a0 a=n664 b=n663 O=n665
+.gate nota0 a=n665 O=n666
+.gate na2a0 a=351[127] b=n656 O=n667
+.gate na2a0 a=358[128] b=332[122] O=n668
+.gate na2a0 a=n668 b=n667 O=n669
+.gate no2a0 a=n669 b=n401 O=n670
+.gate no2a0 a=n405 b=332[122] O=n671
+.gate nota0 a=n668 O=n672
+.gate no2a0 a=n672 b=n671 O=n673
+.gate no2a0 a=n673 b=534[149] O=n674
+.gate no2a0 a=n674 b=n670 O=n675
+.gate no2a0 a=n675 b=n666 O=n676
+.gate nota0 a=n676 O=n677
+.gate no2a0 a=n677 b=n662 O=n678
+.gate no2a0 a=332[122] b=n417 O=n679
+.gate na2a0 a=332[122] b=331[121] O=n680
+.gate nota0 a=n680 O=n681
+.gate no2a0 a=n681 b=n679 O=n682
+.gate nota0 a=n682 O=n683
+.gate no2a0 a=n683 b=n413 O=n684
+.gate no2a0 a=n682 b=503[146] O=n685
+.gate no2a0 a=n685 b=n684 O=n686
+.gate nota0 a=n686 O=n687
+.gate no2a0 a=338[124] b=n656 O=n688
+.gate nota0 a=n688 O=n689
+.gate no2a0 a=n689 b=n377 O=n690
+.gate no2a0 a=n688 b=514[147] O=n691
+.gate no2a0 a=n691 b=n690 O=n692
+.gate nota0 a=n692 O=n693
+.gate na3a0 a=n693 b=n687 c=n678 O=n694
+.gate no2a0 a=332[122] b=n369 O=n695
+.gate na2a0 a=332[122] b=315[117] O=n696
+.gate nota0 a=n696 O=n697
+.gate no2a0 a=n697 b=n695 O=n698
+.gate nota0 a=n698 O=n699
+.gate no2a0 a=n699 b=n365 O=n700
+.gate no2a0 a=n698 b=479[144] O=n701
+.gate no2a0 a=n701 b=n700 O=n702
+.gate no2a0 a=332[122] b=n429 O=n703
+.gate na2a0 a=332[122] b=323[119] O=n704
+.gate nota0 a=n704 O=n705
+.gate no2a0 a=n705 b=n703 O=n706
+.gate nota0 a=n706 O=n707
+.gate no2a0 a=n707 b=n425 O=n708
+.gate no2a0 a=n706 b=490[145] O=n709
+.gate no2a0 a=n709 b=n708 O=n710
+.gate no2a0 a=n710 b=n702 O=n711
+.gate nota0 a=n711 O=n712
+.gate no2a0 a=332[122] b=n394 O=n713
+.gate na2a0 a=332[122] b=307[115] O=n714
+.gate nota0 a=n714 O=n715
+.gate no2a0 a=n715 b=n713 O=n716
+.gate nota0 a=n716 O=n717
+.gate no2a0 a=332[122] b=n383 O=n718
+.gate no2a0 a=n656 b=593[733] O=n719
+.gate no2a0 a=n719 b=n718 O=n720
+.gate nota0 a=n720 O=n721
+.gate no2a0 a=n721 b=n717 O=n722
+.gate nota0 a=n722 O=n723
+.gate no2a0 a=n723 b=n712 O=n724
+.gate nota0 a=n724 O=n725
+.gate no2a0 a=n725 b=n694 O=615[1750]
+.gate nota0 a=369[131] O=n727
+.gate no2a0 a=n727 b=361[129] O=n728
+.gate no2a0 a=369[131] b=n390 O=n729
+.gate no2a0 a=n729 b=n728 O=n730
+.gate no2a0 a=n730 b=n394 O=n731
+.gate na2a0 a=n730 b=n394 O=n732
+.gate nota0 a=n732 O=n733
+.gate no2a0 a=n733 b=n731 O=n734
+.gate nota0 a=n734 O=n735
+.gate no2a0 a=n405 b=341[125] O=n736
+.gate no2a0 a=351[127] b=n441 O=n737
+.gate no2a0 a=n737 b=n736 O=n738
+.gate no2a0 a=n738 b=n417 O=n739
+.gate na2a0 a=n738 b=n417 O=n740
+.gate nota0 a=n740 O=n741
+.gate no2a0 a=n741 b=n739 O=n742
+.gate nota0 a=n742 O=n743
+.gate no2a0 a=n429 b=308[116] O=n744
+.gate no2a0 a=316[118] b=n369 O=n745
+.gate no2a0 a=n745 b=n744 O=n746
+.gate no2a0 a=n746 b=n383 O=n747
+.gate na2a0 a=n746 b=n383 O=n748
+.gate nota0 a=n748 O=n749
+.gate no2a0 a=n749 b=n747 O=n750
+.gate no2a0 a=n750 b=n743 O=n751
+.gate na2a0 a=n750 b=n743 O=n752
+.gate nota0 a=n752 O=n753
+.gate no2a0 a=n753 b=n751 O=n754
+.gate nota0 a=n754 O=n755
+.gate no2a0 a=n755 b=n735 O=n756
+.gate no2a0 a=n754 b=n734 O=n757
+.gate no2a0 a=n757 b=n756 O=1002[1920]
+.gate no2a0 a=n481 b=234[95] O=n759
+.gate no2a0 a=257[102] b=n530 O=n760
+.gate no2a0 a=n760 b=n759 O=n761
+.gate no2a0 a=n761 b=n519 O=n762
+.gate na2a0 a=n761 b=n519 O=n763
+.gate nota0 a=n763 O=n764
+.gate no2a0 a=n764 b=n762 O=n765
+.gate no2a0 a=n765 b=n506 O=n766
+.gate na2a0 a=n765 b=n506 O=n767
+.gate nota0 a=n767 O=n768
+.gate no2a0 a=n768 b=n766 O=n769
+.gate nota0 a=n769 O=n770
+.gate nota0 a=289[110] O=n771
+.gate no2a0 a=n554 b=265[104] O=n772
+.gate no2a0 a=273[106] b=n469 O=n773
+.gate no2a0 a=n773 b=n772 O=n774
+.gate no2a0 a=n774 b=n771 O=n775
+.gate na2a0 a=n774 b=n771 O=n776
+.gate nota0 a=n776 O=n777
+.gate no2a0 a=n777 b=n775 O=n778
+.gate nota0 a=n778 O=n779
+.gate no2a0 a=n494 b=218[91] O=n780
+.gate no2a0 a=226[93] b=n455 O=n781
+.gate no2a0 a=n781 b=n780 O=n782
+.gate no2a0 a=n782 b=n543 O=n783
+.gate na2a0 a=n782 b=n543 O=n784
+.gate nota0 a=n784 O=n785
+.gate no2a0 a=n785 b=n783 O=n786
+.gate no2a0 a=n786 b=n779 O=n787
+.gate na2a0 a=n786 b=n779 O=n788
+.gate nota0 a=n788 O=n789
+.gate no2a0 a=n789 b=n787 O=n790
+.gate nota0 a=n790 O=n791
+.gate no2a0 a=n791 b=n770 O=n792
+.gate no2a0 a=n790 b=n769 O=n793
+.gate no2a0 a=n793 b=n792 O=1004[1977]
+.gate no2a0 a=n605 b=n526 O=n795
+.gate no2a0 a=n613 b=n477 O=n796
+.gate no2a0 a=n644 b=n465 O=n797
+.gate nota0 a=n797 O=n798
+.gate no2a0 a=n634 b=n550 O=n799
+.gate na2a0 a=n799 b=n646 O=n800
+.gate na2a0 a=n800 b=n798 O=n801
+.gate no2a0 a=n621 b=n515 O=n802
+.gate nota0 a=n802 O=n803
+.gate no2a0 a=n803 b=n647 O=n804
+.gate no2a0 a=n804 b=n801 O=n805
+.gate no2a0 a=n805 b=n617 O=n806
+.gate no2a0 a=n806 b=n796 O=n807
+.gate no2a0 a=n807 b=n609 O=n808
+.gate no2a0 a=n808 b=n795 O=n809
+.gate nota0 a=n809 O=n810
+.gate na2a0 a=n810 b=n600 O=n811
+.gate na2a0 a=n568 b=446[141] O=n812
+.gate nota0 a=n570 O=n813
+.gate no2a0 a=n574 b=n502 O=n814
+.gate no2a0 a=n582 b=n451 O=n815
+.gate nota0 a=n591 O=n816
+.gate no2a0 a=n816 b=n586 O=n817
+.gate no2a0 a=n817 b=n815 O=n818
+.gate no2a0 a=n818 b=n578 O=n819
+.gate no2a0 a=n819 b=n814 O=n820
+.gate nota0 a=n820 O=n821
+.gate na2a0 a=n821 b=n813 O=n822
+.gate na3a0 a=n822 b=n812 c=n811 O=591[1894]
+.gate no2a0 a=n682 b=n413 O=n824
+.gate nota0 a=n824 O=n825
+.gate no2a0 a=n688 b=n377 O=n826
+.gate nota0 a=n826 O=n827
+.gate no2a0 a=n658 b=n437 O=n828
+.gate nota0 a=n828 O=n829
+.gate nota0 a=n662 O=n830
+.gate na2a0 a=n673 b=534[149] O=n831
+.gate na2a0 a=n669 b=n401 O=n832
+.gate na2a0 a=n832 b=n831 O=n833
+.gate na2a0 a=n833 b=n666 O=n834
+.gate no2a0 a=n673 b=n401 O=n835
+.gate nota0 a=n835 O=n836
+.gate na2a0 a=n836 b=n834 O=n837
+.gate na2a0 a=n837 b=n830 O=n838
+.gate na2a0 a=n838 b=n829 O=n839
+.gate na2a0 a=n839 b=n693 O=n840
+.gate na2a0 a=n840 b=n827 O=n841
+.gate na2a0 a=n841 b=n687 O=n842
+.gate na2a0 a=n842 b=n825 O=n843
+.gate na2a0 a=n843 b=n724 O=n844
+.gate no2a0 a=n698 b=n365 O=n845
+.gate nota0 a=n845 O=n846
+.gate nota0 a=n702 O=n847
+.gate no2a0 a=n706 b=n425 O=n848
+.gate na2a0 a=n848 b=n847 O=n849
+.gate na2a0 a=n849 b=n846 O=n850
+.gate nota0 a=n850 O=n851
+.gate na3a0 a=n851 b=n844 c=n722 O=618[1925]
+.gate no2a0 a=n666 b=54[20] O=n853
+.gate nota0 a=54[20] O=n854
+.gate no2a0 a=n665 b=n854 O=n855
+.gate no2a0 a=n855 b=n853 O=n856
+.gate nota0 a=4091[175] O=n857
+.gate no2a0 a=4092[176] b=n857 O=n858
+.gate nota0 a=n858 O=n859
+.gate no2a0 a=n859 b=n856 O=n860
+.gate nota0 a=n393 O=n861
+.gate no2a0 a=4092[176] b=4091[175] O=n862
+.gate nota0 a=n862 O=n863
+.gate no2a0 a=n863 b=n861 O=n864
+.gate nota0 a=4092[176] O=n865
+.gate no2a0 a=n865 b=4091[175] O=n866
+.gate na2a0 a=n866 b=131[59] O=n867
+.gate nota0 a=n867 O=n868
+.gate no2a0 a=n868 b=n864 O=n869
+.gate nota0 a=n869 O=n870
+.gate no2a0 a=n870 b=n860 O=822[1933]
+.gate no2a0 a=n853 b=n675 O=n872
+.gate nota0 a=n872 O=n873
+.gate na2a0 a=n853 b=n675 O=n874
+.gate na3a0 a=n874 b=n873 c=n858 O=n875
+.gate nota0 a=n875 O=n876
+.gate na2a0 a=n862 b=n411 O=n877
+.gate na2a0 a=n866 b=129[57] O=n878
+.gate na2a0 a=n878 b=n877 O=n879
+.gate no2a0 a=n879 b=n876 O=838[2064]
+.gate no2a0 a=n625 b=4[1] O=n881
+.gate nota0 a=4[1] O=n882
+.gate nota0 a=n625 O=n883
+.gate no2a0 a=n883 b=n882 O=n884
+.gate no2a0 a=n884 b=n881 O=n885
+.gate no2a0 a=n885 b=n859 O=n886
+.gate na2a0 a=n862 b=n524 O=n887
+.gate na2a0 a=n866 b=117[47] O=n888
+.gate na2a0 a=n888 b=n887 O=n889
+.gate no2a0 a=n889 b=n886 O=861[2070]
+.gate nota0 a=n678 O=n891
+.gate no2a0 a=n891 b=n854 O=n892
+.gate nota0 a=n892 O=n893
+.gate no2a0 a=n893 b=n692 O=n894
+.gate no2a0 a=n894 b=n841 O=n895
+.gate no2a0 a=n895 b=n686 O=n896
+.gate no2a0 a=n896 b=n824 O=n897
+.gate no2a0 a=n897 b=n712 O=n898
+.gate no2a0 a=n898 b=n850 O=n899
+.gate nota0 a=n899 O=n900
+.gate no2a0 a=n900 b=n717 O=n901
+.gate no2a0 a=n901 b=n721 O=n902
+.gate nota0 a=n902 O=n903
+.gate na2a0 a=n901 b=n721 O=n904
+.gate na2a0 a=n904 b=n903 O=623[2152]
+.gate nota0 a=861[2070] O=n906
+.gate nota0 a=4088[172] O=n907
+.gate no2a0 a=n907 b=4087[171] O=n908
+.gate na2a0 a=n908 b=n906 O=n909
+.gate nota0 a=822[1933] O=n910
+.gate no2a0 a=4088[172] b=4087[171] O=n911
+.gate na2a0 a=n911 b=n910 O=n912
+.gate nota0 a=61[21] O=n913
+.gate na2a0 a=4088[172] b=n913 O=n914
+.gate nota0 a=11[2] O=n915
+.gate na2a0 a=n907 b=n915 O=n916
+.gate na3a0 a=n916 b=n914 c=4087[171] O=n917
+.gate na3a0 a=n917 b=n912 c=n909 O=722[2131]
+.gate nota0 a=n895 O=n919
+.gate no2a0 a=n919 b=n686 O=n920
+.gate no2a0 a=n895 b=n687 O=n921
+.gate no2a0 a=n921 b=n920 O=n922
+.gate no2a0 a=n922 b=n859 O=n923
+.gate na2a0 a=n862 b=n422 O=n924
+.gate na2a0 a=n866 b=52[18] O=n925
+.gate na2a0 a=n925 b=n924 O=n926
+.gate no2a0 a=n926 b=n923 O=832[2133]
+.gate no2a0 a=n892 b=n839 O=n928
+.gate nota0 a=n928 O=n929
+.gate no2a0 a=n929 b=n692 O=n930
+.gate no2a0 a=n928 b=n693 O=n931
+.gate no2a0 a=n931 b=n930 O=n932
+.gate no2a0 a=n932 b=n859 O=n933
+.gate na2a0 a=n862 b=n381 O=n934
+.gate na2a0 a=n866 b=130[58] O=n935
+.gate na2a0 a=n935 b=n934 O=n936
+.gate no2a0 a=n936 b=n933 O=834[2123]
+.gate no2a0 a=n872 b=n835 O=n938
+.gate nota0 a=n938 O=n939
+.gate no2a0 a=n939 b=n662 O=n940
+.gate no2a0 a=n938 b=n830 O=n941
+.gate no2a0 a=n941 b=n940 O=n942
+.gate no2a0 a=n942 b=n859 O=n943
+.gate no2a0 a=n863 b=n447 O=n944
+.gate na2a0 a=n866 b=119[49] O=n945
+.gate nota0 a=n945 O=n946
+.gate no2a0 a=n946 b=n944 O=n947
+.gate nota0 a=n947 O=n948
+.gate no2a0 a=n948 b=n943 O=836[2128]
+.gate nota0 a=4089[173] O=n950
+.gate no2a0 a=4090[174] b=n950 O=n951
+.gate na2a0 a=n951 b=n906 O=n952
+.gate no2a0 a=4090[174] b=4089[173] O=n953
+.gate na2a0 a=n953 b=n910 O=n954
+.gate na2a0 a=4089[173] b=n913 O=n955
+.gate na2a0 a=n950 b=n915 O=n956
+.gate na3a0 a=n956 b=n955 c=4090[174] O=n957
+.gate na3a0 a=n957 b=n954 c=n952 O=859[2132]
+.gate nota0 a=n796 O=n959
+.gate nota0 a=n617 O=n960
+.gate no2a0 a=n644 b=400[137] O=n961
+.gate no2a0 a=n639 b=n465 O=n962
+.gate no2a0 a=n962 b=n961 O=n963
+.gate nota0 a=n799 O=n964
+.gate no2a0 a=n964 b=n963 O=n965
+.gate no2a0 a=n965 b=n797 O=n966
+.gate na3a0 a=n802 b=n646 c=n636 O=n967
+.gate na2a0 a=n967 b=n966 O=n968
+.gate na2a0 a=n968 b=n960 O=n969
+.gate na2a0 a=n969 b=n959 O=n970
+.gate no2a0 a=n651 b=n882 O=n971
+.gate no2a0 a=n971 b=n970 O=n972
+.gate nota0 a=n972 O=n973
+.gate no2a0 a=n973 b=n609 O=n974
+.gate nota0 a=n609 O=n975
+.gate no2a0 a=n972 b=n975 O=n976
+.gate no2a0 a=n976 b=n974 O=n977
+.gate no2a0 a=n977 b=n859 O=n978
+.gate na2a0 a=n862 b=n536 O=n979
+.gate na2a0 a=n866 b=122[52] O=n980
+.gate na2a0 a=n980 b=n979 O=n981
+.gate no2a0 a=n981 b=n978 O=871[2127]
+.gate no2a0 a=n649 b=n882 O=n983
+.gate no2a0 a=n983 b=n968 O=n984
+.gate nota0 a=n984 O=n985
+.gate no2a0 a=n985 b=n617 O=n986
+.gate no2a0 a=n984 b=n960 O=n987
+.gate no2a0 a=n987 b=n986 O=n988
+.gate no2a0 a=n988 b=n859 O=n989
+.gate no2a0 a=n863 b=n487 O=n990
+.gate na2a0 a=n866 b=128[56] O=n991
+.gate nota0 a=n991 O=n992
+.gate no2a0 a=n992 b=n990 O=n993
+.gate nota0 a=n993 O=n994
+.gate no2a0 a=n994 b=n989 O=873[2124]
+.gate no2a0 a=n634 b=411[138] O=n996
+.gate no2a0 a=n629 b=n550 O=n997
+.gate no2a0 a=n997 b=n996 O=n998
+.gate no2a0 a=n623 b=374[134] O=n999
+.gate no2a0 a=n999 b=n882 O=n1000
+.gate no2a0 a=n1000 b=n802 O=n1001
+.gate no2a0 a=n1001 b=n998 O=n1002
+.gate no2a0 a=n1002 b=n799 O=n1003
+.gate nota0 a=n1003 O=n1004
+.gate no2a0 a=n1004 b=n963 O=n1005
+.gate no2a0 a=n1003 b=n646 O=n1006
+.gate no2a0 a=n1006 b=n1005 O=n1007
+.gate no2a0 a=n1007 b=n859 O=n1008
+.gate no2a0 a=n863 b=n475 O=n1009
+.gate na2a0 a=n866 b=127[55] O=n1010
+.gate nota0 a=n1010 O=n1011
+.gate no2a0 a=n1011 b=n1009 O=n1012
+.gate nota0 a=n1012 O=n1013
+.gate no2a0 a=n1013 b=n1008 O=875[2125]
+.gate nota0 a=n1001 O=n1015
+.gate no2a0 a=n1015 b=n998 O=n1016
+.gate no2a0 a=n1001 b=n636 O=n1017
+.gate no2a0 a=n1017 b=n1016 O=n1018
+.gate no2a0 a=n1018 b=n859 O=n1019
+.gate na2a0 a=n862 b=n559 O=n1020
+.gate na2a0 a=n866 b=126[54] O=n1021
+.gate na2a0 a=n1021 b=n1020 O=n1022
+.gate no2a0 a=n1022 b=n1019 O=877[2126]
+.gate no2a0 a=n688 b=n683 O=n1024
+.gate no2a0 a=n680 b=338[124] O=n1025
+.gate no2a0 a=n1025 b=n1024 O=n1026
+.gate no2a0 a=n1026 b=n669 O=n1027
+.gate na2a0 a=n1026 b=n669 O=n1028
+.gate nota0 a=n1028 O=n1029
+.gate no2a0 a=n1029 b=n1027 O=n1030
+.gate no2a0 a=n1030 b=n707 O=n1031
+.gate na2a0 a=n1030 b=n707 O=n1032
+.gate nota0 a=n1032 O=n1033
+.gate no2a0 a=n1033 b=n1031 O=n1034
+.gate nota0 a=n1034 O=n1035
+.gate no2a0 a=372[132] b=n656 O=n1036
+.gate no2a0 a=369[131] b=332[122] O=n1037
+.gate no2a0 a=n1037 b=n1036 O=n1038
+.gate nota0 a=n1038 O=n1039
+.gate no2a0 a=n666 b=n658 O=n1040
+.gate no2a0 a=n665 b=n659 O=n1041
+.gate no2a0 a=n1041 b=n1040 O=n1042
+.gate nota0 a=n1042 O=n1043
+.gate no2a0 a=n1043 b=n1039 O=n1044
+.gate no2a0 a=n1042 b=n1038 O=n1045
+.gate no2a0 a=n1045 b=n1044 O=n1046
+.gate nota0 a=n1046 O=n1047
+.gate no2a0 a=n721 b=n716 O=n1048
+.gate no2a0 a=n720 b=n717 O=n1049
+.gate no2a0 a=n1049 b=n1048 O=n1050
+.gate no2a0 a=n1050 b=n699 O=n1051
+.gate nota0 a=n1050 O=n1052
+.gate no2a0 a=n1052 b=n698 O=n1053
+.gate no2a0 a=n1053 b=n1051 O=n1054
+.gate no2a0 a=n1054 b=n1047 O=n1055
+.gate na2a0 a=n1054 b=n1047 O=n1056
+.gate nota0 a=n1056 O=n1057
+.gate no2a0 a=n1057 b=n1055 O=n1058
+.gate nota0 a=n1058 O=n1059
+.gate no2a0 a=n1059 b=n1035 O=n1060
+.gate no2a0 a=n1058 b=n1034 O=n1061
+.gate no2a0 a=n1061 b=n1060 O=998[2163]
+.gate no2a0 a=n621 b=n615 O=n1063
+.gate no2a0 a=n623 b=n613 O=n1064
+.gate no2a0 a=n1064 b=n1063 O=n1065
+.gate nota0 a=n1065 O=n1066
+.gate no2a0 a=n644 b=n629 O=n1067
+.gate no2a0 a=n639 b=n634 O=n1068
+.gate no2a0 a=n1068 b=n1067 O=n1069
+.gate nota0 a=n1069 O=n1070
+.gate no2a0 a=n1070 b=n1066 O=n1071
+.gate no2a0 a=n1069 b=n1065 O=n1072
+.gate no2a0 a=n1072 b=n1071 O=n1073
+.gate no2a0 a=n1073 b=n607 O=n1074
+.gate na2a0 a=n1073 b=n607 O=n1075
+.gate nota0 a=n1075 O=n1076
+.gate no2a0 a=n1076 b=n1074 O=n1077
+.gate no2a0 a=n582 b=n576 O=n1078
+.gate no2a0 a=n584 b=n574 O=n1079
+.gate no2a0 a=n1079 b=n1078 O=n1080
+.gate nota0 a=n1080 O=n1081
+.gate no2a0 a=n626 b=292[111] O=n1082
+.gate no2a0 a=335[123] b=289[110] O=n1083
+.gate no2a0 a=n1083 b=n1082 O=n1084
+.gate nota0 a=n1084 O=n1085
+.gate no2a0 a=n1085 b=n1081 O=n1086
+.gate no2a0 a=n1084 b=n1080 O=n1087
+.gate no2a0 a=n1087 b=n1086 O=n1088
+.gate nota0 a=n1088 O=n1089
+.gate no2a0 a=n590 b=n568 O=n1090
+.gate no2a0 a=n592 b=n566 O=n1091
+.gate no2a0 a=n1091 b=n1090 O=n1092
+.gate no2a0 a=n1092 b=n1089 O=n1093
+.gate na2a0 a=n1092 b=n1089 O=n1094
+.gate nota0 a=n1094 O=n1095
+.gate no2a0 a=n1095 b=n1093 O=n1096
+.gate na2a0 a=n1096 b=n1077 O=n1097
+.gate nota0 a=n1077 O=n1098
+.gate nota0 a=n1096 O=n1099
+.gate na2a0 a=n1099 b=n1098 O=n1100
+.gate na2a0 a=n1100 b=n1097 O=1000[2168]
+.gate nota0 a=n578 O=n1102
+.gate nota0 a=n818 O=n1103
+.gate no2a0 a=n972 b=n609 O=n1104
+.gate no2a0 a=n1104 b=n795 O=n1105
+.gate no2a0 a=n1105 b=n595 O=n1106
+.gate nota0 a=n1106 O=n1107
+.gate no2a0 a=n1107 b=n586 O=n1108
+.gate no2a0 a=n1108 b=n1103 O=n1109
+.gate no2a0 a=n1109 b=n1102 O=n1110
+.gate nota0 a=n1110 O=n1111
+.gate na2a0 a=n1109 b=n1102 O=n1112
+.gate na2a0 a=n1112 b=n1111 O=n1113
+.gate no2a0 a=n821 b=n598 O=n1114
+.gate nota0 a=n1105 O=n1115
+.gate no2a0 a=n1115 b=n821 O=n1116
+.gate no2a0 a=n1116 b=n1114 O=n1117
+.gate no2a0 a=n1117 b=n813 O=n1118
+.gate na2a0 a=n1117 b=n813 O=n1119
+.gate nota0 a=n1119 O=n1120
+.gate no2a0 a=n1120 b=n1118 O=n1121
+.gate nota0 a=n1121 O=n1122
+.gate nota0 a=n586 O=n1123
+.gate no2a0 a=n591 b=n1123 O=n1124
+.gate no2a0 a=n1124 b=n817 O=n1125
+.gate no2a0 a=n1125 b=n1106 O=n1126
+.gate no2a0 a=n1126 b=n1108 O=n1127
+.gate no2a0 a=n1115 b=n594 O=n1128
+.gate no2a0 a=n1128 b=n1106 O=n1129
+.gate nota0 a=n1129 O=n1130
+.gate nota0 a=n988 O=n1131
+.gate no2a0 a=n999 b=n636 O=n1132
+.gate nota0 a=n999 O=n1133
+.gate no2a0 a=n1133 b=n998 O=n1134
+.gate no2a0 a=n1134 b=n1132 O=n1135
+.gate na3a0 a=n1135 b=n1007 c=n885 O=n1136
+.gate no2a0 a=n1136 b=n1131 O=n1137
+.gate na3a0 a=n1137 b=n1130 c=n977 O=n1138
+.gate no2a0 a=n1138 b=n1127 O=n1139
+.gate na2a0 a=n1139 b=n1122 O=n1140
+.gate no2a0 a=n1140 b=n1113 O=575[2240]
+.gate nota0 a=623[2152] O=n1142
+.gate no2a0 a=n899 b=n716 O=n1143
+.gate no2a0 a=n1143 b=n901 O=n1144
+.gate nota0 a=n897 O=n1145
+.gate no2a0 a=n1145 b=n710 O=n1146
+.gate no2a0 a=n707 b=490[145] O=n1147
+.gate no2a0 a=n1147 b=n847 O=n1148
+.gate na2a0 a=n1147 b=n847 O=n1149
+.gate nota0 a=n1149 O=n1150
+.gate no2a0 a=n1150 b=n1148 O=n1151
+.gate no2a0 a=n1151 b=n1146 O=n1152
+.gate nota0 a=n1146 O=n1153
+.gate nota0 a=n1151 O=n1154
+.gate no2a0 a=n1154 b=n1153 O=n1155
+.gate no2a0 a=n1155 b=n1152 O=n1156
+.gate na2a0 a=n1145 b=n710 O=n1157
+.gate na2a0 a=n1157 b=n1153 O=n1158
+.gate nota0 a=n932 O=n1159
+.gate no2a0 a=n873 b=n855 O=n1160
+.gate na2a0 a=n1160 b=n942 O=n1161
+.gate no2a0 a=n1161 b=n1159 O=n1162
+.gate na2a0 a=n1162 b=n922 O=n1163
+.gate no2a0 a=n1163 b=n1158 O=n1164
+.gate na3a0 a=n1164 b=n1156 c=n1144 O=n1165
+.gate no2a0 a=n1165 b=n1142 O=585[2236]
+.gate nota0 a=137[63] O=n1167
+.gate nota0 a=1689[157] O=n1168
+.gate no2a0 a=1690[158] b=n1168 O=n1169
+.gate nota0 a=n1169 O=n1170
+.gate no2a0 a=n1170 b=861[2070] O=n1171
+.gate no2a0 a=1690[158] b=1689[157] O=n1172
+.gate na2a0 a=n1172 b=n910 O=n1173
+.gate nota0 a=185[80] O=n1174
+.gate na2a0 a=1689[157] b=n1174 O=n1175
+.gate nota0 a=1690[158] O=n1176
+.gate no2a0 a=1689[157] b=182[79] O=n1177
+.gate no2a0 a=n1177 b=n1176 O=n1178
+.gate na2a0 a=n1178 b=n1175 O=n1179
+.gate na2a0 a=n1179 b=n1173 O=n1180
+.gate no2a0 a=n1180 b=n1171 O=n1181
+.gate no2a0 a=n1181 b=n1167 O=661[2178]
+.gate nota0 a=1691[159] O=n1183
+.gate no2a0 a=1694[160] b=n1183 O=n1184
+.gate nota0 a=n1184 O=n1185
+.gate no2a0 a=n1185 b=861[2070] O=n1186
+.gate no2a0 a=1694[160] b=1691[159] O=n1187
+.gate na2a0 a=n1187 b=n910 O=n1188
+.gate na2a0 a=1691[159] b=n1174 O=n1189
+.gate nota0 a=1694[160] O=n1190
+.gate no2a0 a=1691[159] b=182[79] O=n1191
+.gate no2a0 a=n1191 b=n1190 O=n1192
+.gate na2a0 a=n1192 b=n1189 O=n1193
+.gate na2a0 a=n1193 b=n1188 O=n1194
+.gate no2a0 a=n1194 b=n1186 O=n1195
+.gate no2a0 a=n1195 b=n1167 O=693[2179]
+.gate nota0 a=832[2133] O=n1197
+.gate na2a0 a=n1197 b=n911 O=n1198
+.gate nota0 a=871[2127] O=n1199
+.gate na2a0 a=n1199 b=n908 O=n1200
+.gate nota0 a=37[13] O=n1201
+.gate na2a0 a=4088[172] b=n1201 O=n1202
+.gate nota0 a=4087[171] O=n1203
+.gate no2a0 a=4088[172] b=43[15] O=n1204
+.gate no2a0 a=n1204 b=n1203 O=n1205
+.gate na2a0 a=n1205 b=n1202 O=n1206
+.gate na3a0 a=n1206 b=n1200 c=n1198 O=747[2187]
+.gate nota0 a=834[2123] O=n1208
+.gate na2a0 a=n1208 b=n911 O=n1209
+.gate nota0 a=873[2124] O=n1210
+.gate na2a0 a=n1210 b=n908 O=n1211
+.gate nota0 a=20[5] O=n1212
+.gate na2a0 a=4088[172] b=n1212 O=n1213
+.gate no2a0 a=4088[172] b=76[26] O=n1214
+.gate no2a0 a=n1214 b=n1203 O=n1215
+.gate na2a0 a=n1215 b=n1213 O=n1216
+.gate na3a0 a=n1216 b=n1211 c=n1209 O=752[2189]
+.gate nota0 a=875[2125] O=n1218
+.gate na2a0 a=n1218 b=n908 O=n1219
+.gate nota0 a=836[2128] O=n1220
+.gate na2a0 a=n1220 b=n911 O=n1221
+.gate nota0 a=17[4] O=n1222
+.gate na2a0 a=4088[172] b=n1222 O=n1223
+.gate nota0 a=73[25] O=n1224
+.gate na2a0 a=n907 b=n1224 O=n1225
+.gate na3a0 a=n1225 b=n1223 c=4087[171] O=n1226
+.gate na3a0 a=n1226 b=n1221 c=n1219 O=757[2190]
+.gate nota0 a=877[2126] O=n1228
+.gate na2a0 a=n1228 b=n908 O=n1229
+.gate nota0 a=838[2064] O=n1230
+.gate na2a0 a=n911 b=n1230 O=n1231
+.gate nota0 a=70[24] O=n1232
+.gate na2a0 a=4088[172] b=n1232 O=n1233
+.gate nota0 a=67[23] O=n1234
+.gate na2a0 a=n907 b=n1234 O=n1235
+.gate na3a0 a=n1235 b=n1233 c=4087[171] O=n1236
+.gate na3a0 a=n1236 b=n1231 c=n1229 O=762[2184]
+.gate na2a0 a=n953 b=n1197 O=n1238
+.gate na2a0 a=n1199 b=n951 O=n1239
+.gate na2a0 a=4089[173] b=n1201 O=n1240
+.gate nota0 a=4090[174] O=n1241
+.gate no2a0 a=4089[173] b=43[15] O=n1242
+.gate no2a0 a=n1242 b=n1241 O=n1243
+.gate na2a0 a=n1243 b=n1240 O=n1244
+.gate na3a0 a=n1244 b=n1239 c=n1238 O=787[2186]
+.gate na2a0 a=n953 b=n1208 O=n1246
+.gate na2a0 a=n1210 b=n951 O=n1247
+.gate na2a0 a=4089[173] b=n1212 O=n1248
+.gate no2a0 a=4089[173] b=76[26] O=n1249
+.gate no2a0 a=n1249 b=n1241 O=n1250
+.gate na2a0 a=n1250 b=n1248 O=n1251
+.gate na3a0 a=n1251 b=n1247 c=n1246 O=792[2188]
+.gate na2a0 a=n1218 b=n951 O=n1253
+.gate na2a0 a=n953 b=n1220 O=n1254
+.gate na2a0 a=4089[173] b=n1222 O=n1255
+.gate na2a0 a=n950 b=n1224 O=n1256
+.gate na3a0 a=n1256 b=n1255 c=4090[174] O=n1257
+.gate na3a0 a=n1257 b=n1254 c=n1253 O=797[2191]
+.gate na2a0 a=n1228 b=n951 O=n1259
+.gate na2a0 a=n953 b=n1230 O=n1260
+.gate na2a0 a=4089[173] b=n1232 O=n1261
+.gate na2a0 a=n950 b=n1234 O=n1262
+.gate na3a0 a=n1262 b=n1261 c=4090[174] O=n1263
+.gate na3a0 a=n1263 b=n1260 c=n1259 O=802[2183]
+.gate nota0 a=n1172 O=n1265
+.gate no2a0 a=n1265 b=832[2133] O=n1266
+.gate na2a0 a=n1169 b=n1199 O=n1267
+.gate nota0 a=170[75] O=n1268
+.gate na2a0 a=1689[157] b=n1268 O=n1269
+.gate no2a0 a=1689[157] b=200[85] O=n1270
+.gate no2a0 a=n1270 b=n1176 O=n1271
+.gate na2a0 a=n1271 b=n1269 O=n1272
+.gate na2a0 a=n1272 b=n1267 O=n1273
+.gate no2a0 a=n1273 b=n1266 O=n1274
+.gate no2a0 a=n1274 b=n1167 O=642[2222]
+.gate no2a0 a=n1170 b=877[2126] O=n1276
+.gate na2a0 a=n1172 b=n1230 O=n1277
+.gate nota0 a=158[71] O=n1278
+.gate na2a0 a=1689[157] b=n1278 O=n1279
+.gate no2a0 a=1689[157] b=188[81] O=n1280
+.gate no2a0 a=n1280 b=n1176 O=n1281
+.gate na2a0 a=n1281 b=n1279 O=n1282
+.gate na2a0 a=n1282 b=n1277 O=n1283
+.gate no2a0 a=n1283 b=n1276 O=n1284
+.gate no2a0 a=n1284 b=n1167 O=664[2223]
+.gate no2a0 a=n1170 b=875[2125] O=n1286
+.gate na2a0 a=n1172 b=n1220 O=n1287
+.gate nota0 a=152[69] O=n1288
+.gate na2a0 a=1689[157] b=n1288 O=n1289
+.gate no2a0 a=1689[157] b=155[70] O=n1290
+.gate no2a0 a=n1290 b=n1176 O=n1291
+.gate na2a0 a=n1291 b=n1289 O=n1292
+.gate na2a0 a=n1292 b=n1287 O=n1293
+.gate no2a0 a=n1293 b=n1286 O=n1294
+.gate no2a0 a=n1294 b=n1167 O=667[2224]
+.gate no2a0 a=n1265 b=834[2123] O=n1296
+.gate na2a0 a=n1169 b=n1210 O=n1297
+.gate nota0 a=146[67] O=n1298
+.gate na2a0 a=1689[157] b=n1298 O=n1299
+.gate no2a0 a=1689[157] b=149[68] O=n1300
+.gate no2a0 a=n1300 b=n1176 O=n1301
+.gate na2a0 a=n1301 b=n1299 O=n1302
+.gate na2a0 a=n1302 b=n1297 O=n1303
+.gate no2a0 a=n1303 b=n1296 O=n1304
+.gate no2a0 a=n1304 b=n1167 O=670[2225]
+.gate nota0 a=n1187 O=n1306
+.gate no2a0 a=n1306 b=832[2133] O=n1307
+.gate na2a0 a=n1184 b=n1199 O=n1308
+.gate na2a0 a=1691[159] b=n1268 O=n1309
+.gate no2a0 a=1691[159] b=200[85] O=n1310
+.gate no2a0 a=n1310 b=n1190 O=n1311
+.gate na2a0 a=n1311 b=n1309 O=n1312
+.gate na2a0 a=n1312 b=n1308 O=n1313
+.gate no2a0 a=n1313 b=n1307 O=n1314
+.gate no2a0 a=n1314 b=n1167 O=676[2229]
+.gate no2a0 a=n1185 b=877[2126] O=n1316
+.gate na2a0 a=n1187 b=n1230 O=n1317
+.gate na2a0 a=1691[159] b=n1278 O=n1318
+.gate no2a0 a=1691[159] b=188[81] O=n1319
+.gate no2a0 a=n1319 b=n1190 O=n1320
+.gate na2a0 a=n1320 b=n1318 O=n1321
+.gate na2a0 a=n1321 b=n1317 O=n1322
+.gate no2a0 a=n1322 b=n1316 O=n1323
+.gate no2a0 a=n1323 b=n1167 O=696[2226]
+.gate no2a0 a=n1185 b=875[2125] O=n1325
+.gate na2a0 a=n1187 b=n1220 O=n1326
+.gate na2a0 a=1691[159] b=n1288 O=n1327
+.gate no2a0 a=1691[159] b=155[70] O=n1328
+.gate no2a0 a=n1328 b=n1190 O=n1329
+.gate na2a0 a=n1329 b=n1327 O=n1330
+.gate na2a0 a=n1330 b=n1326 O=n1331
+.gate no2a0 a=n1331 b=n1325 O=n1332
+.gate no2a0 a=n1332 b=n1167 O=699[2227]
+.gate no2a0 a=n1306 b=834[2123] O=n1334
+.gate na2a0 a=n1184 b=n1210 O=n1335
+.gate na2a0 a=1691[159] b=n1298 O=n1336
+.gate no2a0 a=1691[159] b=149[68] O=n1337
+.gate no2a0 a=n1337 b=n1190 O=n1338
+.gate na2a0 a=n1338 b=n1336 O=n1339
+.gate na2a0 a=n1339 b=n1335 O=n1340
+.gate no2a0 a=n1340 b=n1334 O=n1341
+.gate no2a0 a=n1341 b=n1167 O=702[2228]
+.gate nota0 a=135[61] O=n1343
+.gate nota0 a=4115[177] O=n1344
+.gate no2a0 a=n1344 b=n1343 O=n1345
+.gate na2a0 a=3724[170] b=3717[169] O=n1346
+.gate no2a0 a=n1346 b=623[2152] O=n1347
+.gate nota0 a=3717[169] O=n1348
+.gate na2a0 a=n386 b=n1348 O=n1349
+.gate no2a0 a=n1348 b=123[53] O=n1350
+.gate no2a0 a=n1350 b=3724[170] O=n1351
+.gate na2a0 a=n1351 b=n1349 O=n1352
+.gate nota0 a=132[60] O=n1353
+.gate na2a0 a=n720 b=n1353 O=n1354
+.gate na2a0 a=n721 b=132[60] O=n1355
+.gate na2a0 a=n1355 b=n1354 O=n1356
+.gate na3a0 a=n1356 b=3724[170] c=n1348 O=n1357
+.gate na2a0 a=n1357 b=n1352 O=n1358
+.gate no2a0 a=n1358 b=n1347 O=n1359
+.gate no2a0 a=n1359 b=n1345 O=818[2273]
+.gate nota0 a=n901 O=n1361
+.gate no2a0 a=n1361 b=132[60] O=n1362
+.gate no2a0 a=n901 b=n1353 O=n1363
+.gate no2a0 a=n1363 b=n1362 O=813[2260]
+.gate no2a0 a=623[2152] b=n859 O=n1365
+.gate no2a0 a=n863 b=n386 O=n1366
+.gate na2a0 a=n866 b=123[53] O=n1367
+.gate nota0 a=n1367 O=n1368
+.gate no2a0 a=n1368 b=n1366 O=n1369
+.gate nota0 a=n1369 O=n1370
+.gate no2a0 a=n1370 b=n1365 O=824[2274]
+.gate no2a0 a=n1144 b=n859 O=n1372
+.gate nota0 a=n397 O=n1373
+.gate no2a0 a=n863 b=n1373 O=n1374
+.gate na2a0 a=n866 b=121[51] O=n1375
+.gate nota0 a=n1375 O=n1376
+.gate no2a0 a=n1376 b=n1374 O=n1377
+.gate nota0 a=n1377 O=n1378
+.gate no2a0 a=n1378 b=n1372 O=826[2275]
+.gate no2a0 a=n1156 b=n859 O=n1380
+.gate no2a0 a=n863 b=n376 O=n1381
+.gate na2a0 a=n866 b=116[46] O=n1382
+.gate nota0 a=n1382 O=n1383
+.gate no2a0 a=n1383 b=n1381 O=n1384
+.gate nota0 a=n1384 O=n1385
+.gate no2a0 a=n1385 b=n1380 O=828[2233]
+.gate na2a0 a=n1158 b=n858 O=n1387
+.gate no2a0 a=n863 b=n435 O=n1388
+.gate na2a0 a=n866 b=112[42] O=n1389
+.gate nota0 a=n1389 O=n1390
+.gate no2a0 a=n1390 b=n1388 O=n1391
+.gate na2a0 a=n1391 b=n1387 O=n1392
+.gate nota0 a=n1392 O=830[2182]
+.gate nota0 a=998[2163] O=n1394
+.gate nota0 a=1002[1920] O=n1395
+.gate na3a0 a=601[220] b=559[154] c=245[98] O=n1396
+.gate no2a0 a=n1396 b=847[465] O=n1397
+.gate na2a0 a=n1397 b=n1395 O=n1398
+.gate no2a0 a=n1398 b=1004[1977] O=n1399
+.gate na2a0 a=n1399 b=n1394 O=n1400
+.gate no2a0 a=n1400 b=1000[2168] O=854[2268]
+.gate na2a0 a=n1121 b=n858 O=n1402
+.gate nota0 a=n548 O=n1403
+.gate no2a0 a=n863 b=n1403 O=n1404
+.gate na2a0 a=n866 b=115[45] O=n1405
+.gate nota0 a=n1405 O=n1406
+.gate no2a0 a=n1406 b=n1404 O=n1407
+.gate na2a0 a=n1407 b=n1402 O=n1408
+.gate nota0 a=n1408 O=863[2276]
+.gate na2a0 a=n1113 b=n858 O=n1410
+.gate na2a0 a=n862 b=n512 O=n1411
+.gate na2a0 a=n866 b=114[44] O=n1412
+.gate na2a0 a=n1412 b=n1411 O=n1413
+.gate nota0 a=n1413 O=n1414
+.gate na2a0 a=n1414 b=n1410 O=n1415
+.gate nota0 a=n1415 O=865[2277]
+.gate na2a0 a=n1127 b=n858 O=n1417
+.gate no2a0 a=n863 b=n463 O=n1418
+.gate na2a0 a=n866 b=53[19] O=n1419
+.gate nota0 a=n1419 O=n1420
+.gate no2a0 a=n1420 b=n1418 O=n1421
+.gate na2a0 a=n1421 b=n1417 O=n1422
+.gate nota0 a=n1422 O=867[2237]
+.gate no2a0 a=n1130 b=n859 O=n1424
+.gate na2a0 a=n862 b=n500 O=n1425
+.gate na2a0 a=n866 b=113[43] O=n1426
+.gate na2a0 a=n1426 b=n1425 O=n1427
+.gate no2a0 a=n1427 b=n1424 O=869[2181]
+.gate nota0 a=824[2274] O=n1429
+.gate na2a0 a=n1429 b=n953 O=n1430
+.gate na2a0 a=n1408 b=n951 O=n1431
+.gate nota0 a=106[40] O=n1432
+.gate na2a0 a=4089[173] b=n1432 O=n1433
+.gate nota0 a=109[41] O=n1434
+.gate na2a0 a=n950 b=n1434 O=n1435
+.gate na3a0 a=n1435 b=n1433 c=4090[174] O=n1436
+.gate na3a0 a=n1436 b=n1431 c=n1430 O=712[2297]
+.gate na2a0 a=n1429 b=n911 O=n1438
+.gate na2a0 a=n1408 b=n908 O=n1439
+.gate na2a0 a=4088[172] b=n1432 O=n1440
+.gate na2a0 a=n907 b=n1434 O=n1441
+.gate na3a0 a=n1441 b=n1440 c=4087[171] O=n1442
+.gate na3a0 a=n1442 b=n1439 c=n1438 O=727[2298]
+.gate nota0 a=826[2275] O=n1444
+.gate na2a0 a=n1444 b=n911 O=n1445
+.gate na2a0 a=n1415 b=n908 O=n1446
+.gate nota0 a=49[17] O=n1447
+.gate na2a0 a=4088[172] b=n1447 O=n1448
+.gate no2a0 a=4088[172] b=46[16] O=n1449
+.gate no2a0 a=n1449 b=n1203 O=n1450
+.gate na2a0 a=n1450 b=n1448 O=n1451
+.gate na3a0 a=n1451 b=n1446 c=n1445 O=732[2300]
+.gate nota0 a=828[2233] O=n1453
+.gate na2a0 a=n1453 b=n911 O=n1454
+.gate na2a0 a=n1422 b=n908 O=n1455
+.gate nota0 a=103[39] O=n1456
+.gate na2a0 a=4088[172] b=n1456 O=n1457
+.gate nota0 a=100[38] O=n1458
+.gate na2a0 a=n907 b=n1458 O=n1459
+.gate na3a0 a=n1459 b=n1457 c=4087[171] O=n1460
+.gate na3a0 a=n1460 b=n1455 c=n1454 O=737[2279]
+.gate na2a0 a=n1392 b=n911 O=n1462
+.gate nota0 a=869[2181] O=n1463
+.gate na2a0 a=n1463 b=n908 O=n1464
+.gate nota0 a=40[14] O=n1465
+.gate na2a0 a=4088[172] b=n1465 O=n1466
+.gate nota0 a=91[35] O=n1467
+.gate na2a0 a=n907 b=n1467 O=n1468
+.gate na3a0 a=n1468 b=n1466 c=4087[171] O=n1469
+.gate na3a0 a=n1469 b=n1464 c=n1462 O=742[2238]
+.gate na2a0 a=n1444 b=n953 O=n1471
+.gate na2a0 a=n1415 b=n951 O=n1472
+.gate na2a0 a=4089[173] b=n1447 O=n1473
+.gate no2a0 a=4089[173] b=46[16] O=n1474
+.gate no2a0 a=n1474 b=n1241 O=n1475
+.gate na2a0 a=n1475 b=n1473 O=n1476
+.gate na3a0 a=n1476 b=n1472 c=n1471 O=772[2299]
+.gate na2a0 a=n1453 b=n953 O=n1478
+.gate na2a0 a=n1422 b=n951 O=n1479
+.gate na2a0 a=4089[173] b=n1456 O=n1480
+.gate na2a0 a=n950 b=n1458 O=n1481
+.gate na3a0 a=n1481 b=n1480 c=4090[174] O=n1482
+.gate na3a0 a=n1482 b=n1479 c=n1478 O=777[2278]
+.gate na2a0 a=n1392 b=n953 O=n1484
+.gate na2a0 a=n1463 b=n951 O=n1485
+.gate na2a0 a=4089[173] b=n1465 O=n1486
+.gate na2a0 a=n950 b=n1467 O=n1487
+.gate na3a0 a=n1487 b=n1486 c=4090[174] O=n1488
+.gate na3a0 a=n1488 b=n1485 c=n1484 O=782[2239]
+.gate no2a0 a=830[2182] b=n1265 O=n1490
+.gate na2a0 a=n1463 b=n1169 O=n1491
+.gate nota0 a=173[76] O=n1492
+.gate na2a0 a=1689[157] b=n1492 O=n1493
+.gate no2a0 a=1689[157] b=203[86] O=n1494
+.gate no2a0 a=n1494 b=n1176 O=n1495
+.gate na2a0 a=n1495 b=n1493 O=n1496
+.gate na2a0 a=n1496 b=n1491 O=n1497
+.gate no2a0 a=n1497 b=n1490 O=n1498
+.gate no2a0 a=n1498 b=n1167 O=645[2271]
+.gate no2a0 a=828[2233] b=n1265 O=n1500
+.gate na2a0 a=n1422 b=n1169 O=n1501
+.gate nota0 a=167[74] O=n1502
+.gate na2a0 a=1689[157] b=n1502 O=n1503
+.gate no2a0 a=1689[157] b=197[84] O=n1504
+.gate no2a0 a=n1504 b=n1176 O=n1505
+.gate na2a0 a=n1505 b=n1503 O=n1506
+.gate na2a0 a=n1506 b=n1501 O=n1507
+.gate no2a0 a=n1507 b=n1500 O=n1508
+.gate no2a0 a=n1508 b=n1167 O=648[2295]
+.gate no2a0 a=826[2275] b=n1265 O=n1510
+.gate na2a0 a=n1415 b=n1169 O=n1511
+.gate nota0 a=164[73] O=n1512
+.gate na2a0 a=1689[157] b=n1512 O=n1513
+.gate no2a0 a=1689[157] b=194[83] O=n1514
+.gate no2a0 a=n1514 b=n1176 O=n1515
+.gate na2a0 a=n1515 b=n1513 O=n1516
+.gate na2a0 a=n1516 b=n1511 O=n1517
+.gate no2a0 a=n1517 b=n1510 O=n1518
+.gate no2a0 a=n1518 b=n1167 O=651[2314]
+.gate no2a0 a=824[2274] b=n1265 O=n1520
+.gate na2a0 a=n1408 b=n1169 O=n1521
+.gate nota0 a=161[72] O=n1522
+.gate na2a0 a=1689[157] b=n1522 O=n1523
+.gate no2a0 a=1689[157] b=191[82] O=n1524
+.gate no2a0 a=n1524 b=n1176 O=n1525
+.gate na2a0 a=n1525 b=n1523 O=n1526
+.gate na2a0 a=n1526 b=n1521 O=n1527
+.gate no2a0 a=n1527 b=n1520 O=n1528
+.gate no2a0 a=n1528 b=n1167 O=654[2315]
+.gate no2a0 a=830[2182] b=n1306 O=n1530
+.gate na2a0 a=n1463 b=n1184 O=n1531
+.gate na2a0 a=1691[159] b=n1492 O=n1532
+.gate no2a0 a=1691[159] b=203[86] O=n1533
+.gate no2a0 a=n1533 b=n1190 O=n1534
+.gate na2a0 a=n1534 b=n1532 O=n1535
+.gate na2a0 a=n1535 b=n1531 O=n1536
+.gate no2a0 a=n1536 b=n1530 O=n1537
+.gate no2a0 a=n1537 b=n1167 O=679[2272]
+.gate no2a0 a=828[2233] b=n1306 O=n1539
+.gate na2a0 a=n1422 b=n1184 O=n1540
+.gate na2a0 a=1691[159] b=n1502 O=n1541
+.gate no2a0 a=1691[159] b=197[84] O=n1542
+.gate no2a0 a=n1542 b=n1190 O=n1543
+.gate na2a0 a=n1543 b=n1541 O=n1544
+.gate na2a0 a=n1544 b=n1540 O=n1545
+.gate no2a0 a=n1545 b=n1539 O=n1546
+.gate no2a0 a=n1546 b=n1167 O=682[2296]
+.gate no2a0 a=826[2275] b=n1306 O=n1548
+.gate na2a0 a=n1415 b=n1184 O=n1549
+.gate na2a0 a=1691[159] b=n1512 O=n1550
+.gate no2a0 a=1691[159] b=194[83] O=n1551
+.gate no2a0 a=n1551 b=n1190 O=n1552
+.gate na2a0 a=n1552 b=n1550 O=n1553
+.gate na2a0 a=n1553 b=n1549 O=n1554
+.gate no2a0 a=n1554 b=n1548 O=n1555
+.gate no2a0 a=n1555 b=n1167 O=685[2316]
+.gate no2a0 a=824[2274] b=n1306 O=n1557
+.gate na2a0 a=n1408 b=n1184 O=n1558
+.gate na2a0 a=1691[159] b=n1522 O=n1559
+.gate no2a0 a=1691[159] b=191[82] O=n1560
+.gate no2a0 a=n1560 b=n1190 O=n1561
+.gate na2a0 a=n1561 b=n1559 O=n1562
+.gate na2a0 a=n1562 b=n1558 O=n1563
+.gate no2a0 a=n1563 b=n1557 O=n1564
+.gate no2a0 a=n1564 b=n1167 O=688[2317]
+.gate nota0 a=120[50] O=n1566
+.gate na2a0 a=n857 b=n1566 O=n1567
+.gate no2a0 a=n1373 b=n375 O=n1568
+.gate no2a0 a=n397 b=n376 O=n1569
+.gate no2a0 a=n1569 b=n1568 O=n1570
+.gate no2a0 a=351[127] b=n363 O=n1571
+.gate na2a0 a=351[127] b=242[97] O=n1572
+.gate na2a0 a=n1572 b=n401 O=n1573
+.gate no2a0 a=n1573 b=n1571 O=n1574
+.gate no2a0 a=n405 b=248[99] O=n1575
+.gate na2a0 a=n405 b=n371 O=n1576
+.gate na2a0 a=n1576 b=534[149] O=n1577
+.gate no2a0 a=n1577 b=n1575 O=n1578
+.gate no2a0 a=n1578 b=n1574 O=n1579
+.gate nota0 a=n1579 O=n1580
+.gate no2a0 a=341[125] b=n363 O=n1581
+.gate na2a0 a=341[125] b=242[97] O=n1582
+.gate na2a0 a=n1582 b=n437 O=n1583
+.gate no2a0 a=n1583 b=n1581 O=n1584
+.gate no2a0 a=n441 b=248[99] O=n1585
+.gate na2a0 a=n441 b=n371 O=n1586
+.gate na2a0 a=n1586 b=523[148] O=n1587
+.gate no2a0 a=n1587 b=n1585 O=n1588
+.gate no2a0 a=n1588 b=n1584 O=n1589
+.gate no2a0 a=n1589 b=n1580 O=n1590
+.gate na2a0 a=n1589 b=n1580 O=n1591
+.gate nota0 a=n1591 O=n1592
+.gate no2a0 a=n1592 b=n1590 O=n1593
+.gate nota0 a=n1593 O=n1594
+.gate no2a0 a=n377 b=248[99] O=n1595
+.gate no2a0 a=514[147] b=n382 O=n1596
+.gate no2a0 a=n1596 b=n1595 O=n1597
+.gate nota0 a=n1597 O=n1598
+.gate no2a0 a=n1598 b=n1594 O=n1599
+.gate no2a0 a=n1597 b=n1593 O=n1600
+.gate no2a0 a=n1600 b=n1599 O=n1601
+.gate no2a0 a=324[120] b=n363 O=n1602
+.gate na2a0 a=324[120] b=242[97] O=n1603
+.gate na2a0 a=n1603 b=n413 O=n1604
+.gate no2a0 a=n1604 b=n1602 O=n1605
+.gate no2a0 a=n417 b=248[99] O=n1606
+.gate na2a0 a=n417 b=n371 O=n1607
+.gate na2a0 a=n1607 b=503[146] O=n1608
+.gate no2a0 a=n1608 b=n1606 O=n1609
+.gate no2a0 a=n1609 b=n1605 O=n1610
+.gate no2a0 a=n1610 b=n861 O=n1611
+.gate na2a0 a=n1610 b=n861 O=n1612
+.gate nota0 a=n1612 O=n1613
+.gate no2a0 a=n1613 b=n1611 O=n1614
+.gate nota0 a=n1614 O=n1615
+.gate no2a0 a=n434 b=n387 O=n1616
+.gate no2a0 a=n435 b=n386 O=n1617
+.gate no2a0 a=n1617 b=n1616 O=n1618
+.gate no2a0 a=n1618 b=n1615 O=n1619
+.gate na2a0 a=n1618 b=n1615 O=n1620
+.gate nota0 a=n1620 O=n1621
+.gate no2a0 a=n1621 b=n1619 O=n1622
+.gate nota0 a=n1622 O=n1623
+.gate no2a0 a=n1623 b=n1601 O=n1624
+.gate na2a0 a=n1623 b=n1601 O=n1625
+.gate nota0 a=n1625 O=n1626
+.gate no2a0 a=n1626 b=n1624 O=n1627
+.gate nota0 a=n1570 O=n1628
+.gate nota0 a=n1627 O=n1629
+.gate no2a0 a=n1629 b=n1628 O=n1630
+.gate no2a0 a=n1630 b=4091[175] O=n1631
+.gate no2a0 a=n1567 b=n865 O=n1632
+.gate na2a0 a=n1629 b=n1628 O=n1633
+.gate na2a0 a=n1631 b=n1633 O=n1634
+.gate na2a0 a=n1634 b=n865 O=n1635
+.gate no2a0 a=n675 b=n665 O=n1636
+.gate no2a0 a=n835 b=n1636 O=n1637
+.gate no2a0 a=n1637 b=n662 O=n1638
+.gate no2a0 a=n1638 b=n828 O=n1639
+.gate no2a0 a=n689 b=514[147] O=n1640
+.gate no2a0 a=n1640 b=n891 O=n1641
+.gate na3a0 a=n839 b=n688 c=n377 O=n1642
+.gate na2a0 a=n1639 b=n826 O=n1643
+.gate na2a0 a=n1643 b=n1642 O=n1644
+.gate no2a0 a=n1644 b=n678 O=n1645
+.gate no2a0 a=n1645 b=n1641 O=n1646
+.gate no2a0 a=n1646 b=n666 O=n1647
+.gate na2a0 a=n1644 b=n666 O=n1648
+.gate nota0 a=n1648 O=n1649
+.gate no2a0 a=n1649 b=n1647 O=n1650
+.gate no2a0 a=n687 b=n662 O=n1651
+.gate no2a0 a=n686 b=n830 O=n1652
+.gate no2a0 a=n1652 b=n1651 O=n1653
+.gate no2a0 a=n1653 b=n836 O=n1654
+.gate nota0 a=n1653 O=n1655
+.gate no2a0 a=n1655 b=n835 O=n1656
+.gate no2a0 a=n1656 b=n1654 O=n1657
+.gate no2a0 a=n1657 b=n1650 O=n1658
+.gate na2a0 a=n1657 b=n1650 O=n1659
+.gate na2a0 a=n1659 b=2174[161] O=n1660
+.gate no2a0 a=n1660 b=n1658 O=n1661
+.gate nota0 a=n1644 O=n1662
+.gate no2a0 a=n1662 b=n687 O=n1663
+.gate no2a0 a=n1644 b=n686 O=n1664
+.gate no2a0 a=n1664 b=n1663 O=n1665
+.gate no2a0 a=n835 b=n676 O=n1666
+.gate nota0 a=n1666 O=n1667
+.gate no2a0 a=n1667 b=n662 O=n1668
+.gate no2a0 a=n1666 b=n830 O=n1669
+.gate no2a0 a=n1669 b=n1668 O=n1670
+.gate no2a0 a=n1670 b=n1665 O=n1671
+.gate nota0 a=2174[161] O=n1672
+.gate na2a0 a=n1670 b=n1665 O=n1673
+.gate na2a0 a=n1673 b=n1672 O=n1674
+.gate no2a0 a=n1674 b=n1671 O=n1675
+.gate no2a0 a=n1675 b=n1661 O=n1676
+.gate no2a0 a=n694 b=n1672 O=n1677
+.gate no2a0 a=n1677 b=n843 O=n1678
+.gate nota0 a=n1678 O=n1679
+.gate no2a0 a=n850 b=n716 O=n1680
+.gate nota0 a=n1680 O=n1681
+.gate no2a0 a=n1151 b=n1052 O=n1682
+.gate na2a0 a=n1151 b=n1052 O=n1683
+.gate nota0 a=n1683 O=n1684
+.gate no2a0 a=n1684 b=n1682 O=n1685
+.gate no2a0 a=n1685 b=n1681 O=n1686
+.gate na2a0 a=n1685 b=n1681 O=n1687
+.gate nota0 a=n1687 O=n1688
+.gate no2a0 a=n1688 b=n1686 O=n1689
+.gate no2a0 a=n1689 b=n1679 O=n1690
+.gate nota0 a=n849 O=n1691
+.gate no2a0 a=n848 b=n847 O=n1692
+.gate no2a0 a=n1692 b=n1691 O=n1693
+.gate nota0 a=n1693 O=n1694
+.gate na2a0 a=n1680 b=n712 O=n1695
+.gate na2a0 a=n1695 b=n1050 O=n1696
+.gate nota0 a=n1696 O=n1697
+.gate no2a0 a=n1695 b=n1050 O=n1698
+.gate no2a0 a=n1698 b=n1697 O=n1699
+.gate no2a0 a=n1699 b=n1694 O=n1700
+.gate nota0 a=n1698 O=n1701
+.gate na2a0 a=n1701 b=n1696 O=n1702
+.gate no2a0 a=n1702 b=n1693 O=n1703
+.gate no2a0 a=n1703 b=n1700 O=n1704
+.gate no2a0 a=n1704 b=n1678 O=n1705
+.gate no2a0 a=n1705 b=n1690 O=n1706
+.gate no2a0 a=n1706 b=n693 O=n1707
+.gate nota0 a=n1686 O=n1708
+.gate na2a0 a=n1687 b=n1708 O=n1709
+.gate na2a0 a=n1709 b=n1678 O=n1710
+.gate na2a0 a=n1702 b=n1693 O=n1711
+.gate na2a0 a=n1699 b=n1694 O=n1712
+.gate na2a0 a=n1712 b=n1711 O=n1713
+.gate na2a0 a=n1713 b=n1679 O=n1714
+.gate na2a0 a=n1714 b=n1710 O=n1715
+.gate no2a0 a=n1715 b=n692 O=n1716
+.gate no2a0 a=n1716 b=n1707 O=n1717
+.gate no2a0 a=n1717 b=n1676 O=n1718
+.gate na2a0 a=n1717 b=n1676 O=n1719
+.gate na2a0 a=n1719 b=4091[175] O=n1720
+.gate no2a0 a=n1720 b=n1718 O=n1721
+.gate no2a0 a=n1721 b=n1635 O=n1722
+.gate no2a0 a=n1722 b=n1632 O=843[2455]
+.gate nota0 a=118[48] O=n1724
+.gate na2a0 a=n857 b=n1724 O=n1725
+.gate no2a0 a=n363 b=210[89] O=n1726
+.gate na2a0 a=242[97] b=210[89] O=n1727
+.gate na2a0 a=n1727 b=n502 O=n1728
+.gate no2a0 a=n1728 b=n1726 O=n1729
+.gate na2a0 a=n507 b=248[99] O=n1730
+.gate na2a0 a=n509 b=251[100] O=n1731
+.gate na2a0 a=n1731 b=n1730 O=n1732
+.gate no2a0 a=n1732 b=n1729 O=n1733
+.gate nota0 a=n1733 O=n1734
+.gate no2a0 a=n363 b=218[91] O=n1735
+.gate na2a0 a=242[97] b=218[91] O=n1736
+.gate na2a0 a=n1736 b=n451 O=n1737
+.gate no2a0 a=n1737 b=n1735 O=n1738
+.gate na2a0 a=n456 b=248[99] O=n1739
+.gate na2a0 a=n459 b=251[100] O=n1740
+.gate na2a0 a=n1740 b=n1739 O=n1741
+.gate no2a0 a=n1741 b=n1738 O=n1742
+.gate no2a0 a=n1742 b=n1734 O=n1743
+.gate na2a0 a=n1742 b=n1734 O=n1744
+.gate nota0 a=n1744 O=n1745
+.gate no2a0 a=n1745 b=n1743 O=n1746
+.gate no2a0 a=273[106] b=n363 O=n1747
+.gate na2a0 a=273[106] b=242[97] O=n1748
+.gate na2a0 a=n1748 b=n550 O=n1749
+.gate no2a0 a=n1749 b=n1747 O=n1750
+.gate no2a0 a=n554 b=248[99] O=n1751
+.gate na2a0 a=n554 b=n371 O=n1752
+.gate na2a0 a=n1752 b=411[138] O=n1753
+.gate no2a0 a=n1753 b=n1751 O=n1754
+.gate no2a0 a=n1754 b=n1750 O=n1755
+.gate nota0 a=n1755 O=n1756
+.gate no2a0 a=265[104] b=n363 O=n1757
+.gate na2a0 a=265[104] b=242[97] O=n1758
+.gate na2a0 a=n1758 b=n465 O=n1759
+.gate no2a0 a=n1759 b=n1757 O=n1760
+.gate no2a0 a=n469 b=248[99] O=n1761
+.gate na2a0 a=n469 b=n371 O=n1762
+.gate na2a0 a=n1762 b=400[137] O=n1763
+.gate no2a0 a=n1763 b=n1761 O=n1764
+.gate no2a0 a=n1764 b=n1760 O=n1765
+.gate no2a0 a=n1765 b=n1756 O=n1766
+.gate na2a0 a=n1765 b=n1756 O=n1767
+.gate nota0 a=n1767 O=n1768
+.gate no2a0 a=n1768 b=n1766 O=n1769
+.gate nota0 a=n1769 O=n1770
+.gate no2a0 a=n363 b=234[95] O=n1771
+.gate na2a0 a=242[97] b=234[95] O=n1772
+.gate na2a0 a=n1772 b=n526 O=n1773
+.gate no2a0 a=n1773 b=n1771 O=n1774
+.gate na2a0 a=n531 b=248[99] O=n1775
+.gate na2a0 a=n533 b=251[100] O=n1776
+.gate na2a0 a=n1776 b=n1775 O=n1777
+.gate no2a0 a=n1777 b=n1774 O=n1778
+.gate nota0 a=n1778 O=n1779
+.gate no2a0 a=n1779 b=n1770 O=n1780
+.gate no2a0 a=n1778 b=n1769 O=n1781
+.gate no2a0 a=n1781 b=n1780 O=n1782
+.gate no2a0 a=257[102] b=n363 O=n1783
+.gate na2a0 a=257[102] b=242[97] O=n1784
+.gate na2a0 a=n1784 b=n477 O=n1785
+.gate no2a0 a=n1785 b=n1783 O=n1786
+.gate no2a0 a=n481 b=248[99] O=n1787
+.gate na2a0 a=n481 b=n371 O=n1788
+.gate na2a0 a=n1788 b=389[136] O=n1789
+.gate no2a0 a=n1789 b=n1787 O=n1790
+.gate no2a0 a=n1790 b=n1786 O=n1791
+.gate nota0 a=n1791 O=n1792
+.gate no2a0 a=281[108] b=n363 O=n1793
+.gate na2a0 a=281[108] b=242[97] O=n1794
+.gate na2a0 a=n1794 b=n515 O=n1795
+.gate no2a0 a=n1795 b=n1793 O=n1796
+.gate no2a0 a=n519 b=248[99] O=n1797
+.gate na2a0 a=n519 b=n371 O=n1798
+.gate na2a0 a=n1798 b=374[134] O=n1799
+.gate no2a0 a=n1799 b=n1797 O=n1800
+.gate no2a0 a=n1800 b=n1796 O=n1801
+.gate no2a0 a=n1801 b=n1792 O=n1802
+.gate na2a0 a=n1801 b=n1792 O=n1803
+.gate nota0 a=n1803 O=n1804
+.gate no2a0 a=n1804 b=n1802 O=n1805
+.gate nota0 a=n1805 O=n1806
+.gate no2a0 a=n363 b=226[93] O=n1807
+.gate na2a0 a=242[97] b=226[93] O=n1808
+.gate na2a0 a=n1808 b=n490 O=n1809
+.gate no2a0 a=n1809 b=n1807 O=n1810
+.gate na2a0 a=n495 b=248[99] O=n1811
+.gate na2a0 a=n497 b=251[100] O=n1812
+.gate na2a0 a=n1812 b=n1811 O=n1813
+.gate no2a0 a=n1813 b=n1810 O=n1814
+.gate no2a0 a=n1814 b=n1403 O=n1815
+.gate na2a0 a=n1814 b=n1403 O=n1816
+.gate nota0 a=n1816 O=n1817
+.gate no2a0 a=n1817 b=n1815 O=n1818
+.gate no2a0 a=n1818 b=n1806 O=n1819
+.gate na2a0 a=n1818 b=n1806 O=n1820
+.gate nota0 a=n1820 O=n1821
+.gate no2a0 a=n1821 b=n1819 O=n1822
+.gate nota0 a=n1822 O=n1823
+.gate no2a0 a=n1823 b=n1782 O=n1824
+.gate na2a0 a=n1823 b=n1782 O=n1825
+.gate nota0 a=n1825 O=n1826
+.gate no2a0 a=n1826 b=n1824 O=n1827
+.gate no2a0 a=n1827 b=n1746 O=n1828
+.gate na2a0 a=n1827 b=n1746 O=n1829
+.gate na2a0 a=n1829 b=n857 O=n1830
+.gate no2a0 a=n1830 b=n1828 O=n1831
+.gate no2a0 a=n1725 b=n865 O=n1832
+.gate no2a0 a=n1831 b=4092[176] O=n1833
+.gate nota0 a=1497[156] O=n1834
+.gate no2a0 a=n653 b=n1834 O=n1835
+.gate no2a0 a=n1835 b=n810 O=n1836
+.gate nota0 a=n1836 O=n1837
+.gate no2a0 a=n1103 b=n814 O=n1838
+.gate no2a0 a=n576 b=457[142] O=n1839
+.gate no2a0 a=n1839 b=n818 O=n1840
+.gate no2a0 a=n1840 b=n1838 O=n1841
+.gate no2a0 a=n1841 b=n813 O=n1842
+.gate na2a0 a=n1841 b=n813 O=n1843
+.gate nota0 a=n1843 O=n1844
+.gate no2a0 a=n1844 b=n1842 O=n1845
+.gate nota0 a=n593 O=n1846
+.gate no2a0 a=n586 b=n1102 O=n1847
+.gate no2a0 a=n1123 b=n578 O=n1848
+.gate no2a0 a=n1848 b=n1847 O=n1849
+.gate nota0 a=n1849 O=n1850
+.gate no2a0 a=n1850 b=n1846 O=n1851
+.gate no2a0 a=n1849 b=n593 O=n1852
+.gate no2a0 a=n1852 b=n1851 O=n1853
+.gate nota0 a=n1853 O=n1854
+.gate na2a0 a=n1854 b=n1845 O=n1855
+.gate nota0 a=n1855 O=n1856
+.gate no2a0 a=n1854 b=n1845 O=n1857
+.gate no2a0 a=n1857 b=n1856 O=n1858
+.gate no2a0 a=n1858 b=n1837 O=n1859
+.gate nota0 a=n1125 O=n1860
+.gate no2a0 a=n1860 b=n813 O=n1861
+.gate no2a0 a=n1125 b=n570 O=n1862
+.gate no2a0 a=n1862 b=n1861 O=n1863
+.gate nota0 a=n1863 O=n1864
+.gate no2a0 a=n1103 b=n596 O=n1865
+.gate nota0 a=n1865 O=n1866
+.gate no2a0 a=n1866 b=n1839 O=n1867
+.gate no2a0 a=n1865 b=n814 O=n1868
+.gate no2a0 a=n1868 b=n1867 O=n1869
+.gate na2a0 a=n1869 b=n1864 O=n1870
+.gate nota0 a=n1869 O=n1871
+.gate na2a0 a=n1871 b=n1863 O=n1872
+.gate na3a0 a=n1872 b=n1870 c=n1837 O=n1873
+.gate nota0 a=n1873 O=n1874
+.gate no2a0 a=n1874 b=n1859 O=n1875
+.gate nota0 a=n1875 O=n1876
+.gate no2a0 a=n1134 b=n646 O=n1877
+.gate na2a0 a=n1134 b=n646 O=n1878
+.gate nota0 a=n1878 O=n1879
+.gate no2a0 a=n1879 b=n1877 O=n1880
+.gate nota0 a=n1880 O=n1881
+.gate na3a0 a=n1133 b=n805 c=n649 O=n1882
+.gate no2a0 a=n1882 b=n625 O=n1883
+.gate na2a0 a=n1133 b=n649 O=n1884
+.gate no2a0 a=n1884 b=n968 O=n1885
+.gate na2a0 a=n999 b=n801 O=n1886
+.gate na2a0 a=n1886 b=n625 O=n1887
+.gate no2a0 a=n1887 b=n1885 O=n1888
+.gate no2a0 a=n1888 b=n1883 O=n1889
+.gate no2a0 a=n1889 b=n975 O=n1890
+.gate na2a0 a=n1885 b=n883 O=n1891
+.gate na3a0 a=n1886 b=n1882 c=n625 O=n1892
+.gate na2a0 a=n1892 b=n1891 O=n1893
+.gate no2a0 a=n1893 b=n609 O=n1894
+.gate no2a0 a=n1894 b=n1890 O=n1895
+.gate no2a0 a=n970 b=n650 O=n1896
+.gate na2a0 a=n1896 b=n964 O=n1897
+.gate no2a0 a=n1896 b=n964 O=n1898
+.gate nota0 a=n1898 O=n1899
+.gate na2a0 a=n1899 b=n1897 O=n1900
+.gate na2a0 a=n1900 b=n1895 O=n1901
+.gate na2a0 a=n1893 b=n609 O=n1902
+.gate na2a0 a=n1889 b=n975 O=n1903
+.gate na2a0 a=n1903 b=n1902 O=n1904
+.gate nota0 a=n1897 O=n1905
+.gate no2a0 a=n1898 b=n1905 O=n1906
+.gate na2a0 a=n1906 b=n1904 O=n1907
+.gate na3a0 a=n1907 b=n1901 c=n1881 O=n1908
+.gate na2a0 a=n1907 b=n1901 O=n1909
+.gate na2a0 a=n1909 b=n1880 O=n1910
+.gate na3a0 a=n1910 b=n1908 c=1497[156] O=n1911
+.gate no2a0 a=n803 b=n998 O=n1912
+.gate no2a0 a=n1912 b=n799 O=n1913
+.gate no2a0 a=n1913 b=n975 O=n1914
+.gate na2a0 a=n1913 b=n975 O=n1915
+.gate nota0 a=n1915 O=n1916
+.gate no2a0 a=n1916 b=n1914 O=n1917
+.gate nota0 a=n1917 O=n1918
+.gate nota0 a=n1135 O=n1919
+.gate na2a0 a=n970 b=n968 O=n1920
+.gate no2a0 a=n968 b=n796 O=n1921
+.gate nota0 a=n1921 O=n1922
+.gate na2a0 a=n1922 b=n1920 O=n1923
+.gate na2a0 a=n1923 b=n963 O=n1924
+.gate na3a0 a=n1922 b=n1920 c=n646 O=n1925
+.gate na3a0 a=n1925 b=n1924 c=n1919 O=n1926
+.gate na2a0 a=n1925 b=n1924 O=n1927
+.gate na2a0 a=n1927 b=n1135 O=n1928
+.gate na2a0 a=n1928 b=n1926 O=n1929
+.gate na2a0 a=n1929 b=n1918 O=n1930
+.gate na3a0 a=n1928 b=n1926 c=n1917 O=n1931
+.gate na3a0 a=n1931 b=n1930 c=n1834 O=n1932
+.gate na2a0 a=n1932 b=n1911 O=n1933
+.gate na2a0 a=n1933 b=n617 O=n1934
+.gate na3a0 a=n1932 b=n1911 c=n960 O=n1935
+.gate na3a0 a=n1935 b=n1934 c=n1876 O=n1936
+.gate na2a0 a=n1935 b=n1934 O=n1937
+.gate na2a0 a=n1937 b=n1875 O=n1938
+.gate na3a0 a=n1938 b=n1936 c=4091[175] O=n1939
+.gate na2a0 a=n1939 b=n1833 O=n1940
+.gate nota0 a=n1940 O=n1941
+.gate no2a0 a=n1941 b=n1832 O=882[2456]
+.gate na2a0 a=4092[176] b=97[37] O=n1943
+.gate na2a0 a=n1943 b=n1940 O=n1944
+.gate na2a0 a=n1944 b=n908 O=n1945
+.gate nota0 a=n911 O=n1946
+.gate nota0 a=94[36] O=n1947
+.gate no2a0 a=n865 b=n1947 O=n1948
+.gate no2a0 a=n1948 b=n1722 O=n1949
+.gate no2a0 a=n1949 b=n1946 O=n1950
+.gate no2a0 a=n907 b=64[22] O=n1951
+.gate nota0 a=14[3] O=n1952
+.gate na2a0 a=n907 b=n1952 O=n1953
+.gate na2a0 a=n1953 b=4087[171] O=n1954
+.gate no2a0 a=n1954 b=n1951 O=n1955
+.gate no2a0 a=n1955 b=n1950 O=n1956
+.gate na2a0 a=n1956 b=n1945 O=767[2479]
+.gate na2a0 a=n1944 b=n951 O=n1958
+.gate nota0 a=n953 O=n1959
+.gate no2a0 a=n1949 b=n1959 O=n1960
+.gate no2a0 a=n950 b=64[22] O=n1961
+.gate na2a0 a=n950 b=n1952 O=n1962
+.gate na2a0 a=n1962 b=4090[174] O=n1963
+.gate no2a0 a=n1963 b=n1961 O=n1964
+.gate no2a0 a=n1964 b=n1960 O=n1965
+.gate na2a0 a=n1965 b=n1958 O=807[2480]
+.gate na2a0 a=n1944 b=n1169 O=n1967
+.gate no2a0 a=n1949 b=n1265 O=n1968
+.gate no2a0 a=n1168 b=179[78] O=n1969
+.gate nota0 a=176[77] O=n1970
+.gate na2a0 a=n1168 b=n1970 O=n1971
+.gate na2a0 a=n1971 b=1690[158] O=n1972
+.gate no2a0 a=n1972 b=n1969 O=n1973
+.gate no2a0 a=n1973 b=n1968 O=n1974
+.gate na2a0 a=n1974 b=n1967 O=n1975
+.gate na2a0 a=n1975 b=137[63] O=658[2483]
+.gate na2a0 a=n1944 b=n1184 O=n1977
+.gate no2a0 a=n1949 b=n1306 O=n1978
+.gate no2a0 a=n1183 b=179[78] O=n1979
+.gate na2a0 a=n1183 b=n1970 O=n1980
+.gate na2a0 a=n1980 b=1694[160] O=n1981
+.gate no2a0 a=n1981 b=n1979 O=n1982
+.gate no2a0 a=n1982 b=n1978 O=n1983
+.gate na2a0 a=n1983 b=n1977 O=n1984
+.gate na2a0 a=n1984 b=137[63] O=690[2484]
+.gate bufa0 a=141[65] O=144[354]
+.gate bufa0 a=293[112] O=298[299]
+.gate bufa0 a=3173[164] O=973[202]
+.gate bufa0 a=594[224] O=603[225]
+.gate bufa0 a=594[224] O=604[223]
+.gate bufa0 a=137[63] O=926[624]
+.gate bufa0 a=141[65] O=923[619]
+.gate bufa0 a=1[0] O=921[664]
+.gate bufa0 a=549[151] O=892[408]
+.gate bufa0 a=299[113] O=887[528]
+.gate bufa0 a=602[222] O=606[407]
+.gate bufa0 a=1[0] O=993[850]
+.gate bufa0 a=1[0] O=978[851]
+.gate bufa0 a=1[0] O=949[852]
+.gate bufa0 a=1[0] O=939[853]
+.gate bufa0 a=299[113] O=889[734]
+.gate bufa0 a=704[1281] O=717[1282]
+.gate bufa0 a=615[1750] O=626[1752]
+.gate bufa0 a=588[1696] O=632[1692]
+.gate bufa0 a=591[1894] O=621[1893]
+.gate bufa0 a=618[1925] O=629[1926]
+.end

@@ -1,0 +1,11 @@
+# Benchmark "C17.iscas" written by ABC on Mon Apr 13 19:10:49 2015
+.model C17.iscas
+.inputs 1GAT[0] 2GAT[1] 3GAT[2] 6GAT[3] 7GAT[4]
+.outputs 22GAT[10] 23GAT[9]
+.gate na2a0 a=3GAT[2] b=1GAT[0] O=n8
+.gate na2a0 a=6GAT[3] b=3GAT[2] O=n9
+.gate na2a0 a=n9 b=2GAT[1] O=n10
+.gate na2a0 a=n10 b=n8 O=22GAT[10]
+.gate na2a0 a=n9 b=7GAT[4] O=n12
+.gate na2a0 a=n12 b=n10 O=23GAT[9]
+.end

@@ -15,7 +15,7 @@ Note 15 (Oct. 1, 2017): Reformatted the README.md and added ISCAS benchmarks to 
 
 --------------------------
 
-### Olg change logs
+# Old change logs
 
 Change logs previous to Oct. 01, 2017, as history reference only
 

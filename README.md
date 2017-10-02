@@ -1,4 +1,4 @@
-# ASL_optimizer: An optimizer for perform TILOS-like algorithm for energy/delay trade-offs in ASL circuits
+# ASL optimizer: An optimizer performing TILOS-like algorithm for exploring energy/delay trade-offs in ASL circuits
 ==========================
 
 Author: Zhaoxin Liang @ University of Minnesota - Twin Cities, VLSI - EDA group.
@@ -19,7 +19,7 @@ Note 4: v6 does not include incremental timing analysis, it is included in v5.
 
 Note 5: v7 removed the STA performance in every TILOS iterations.
 
-Note 6: v8 added incremental timing analysis back
+Note 6: v8 added incremental timing analysis back.
 
 Note 7: The "same delay reduction flag" is removed in v9, yet the STA is recovered for the evaluation after each adaption.
 
@@ -35,8 +35,10 @@ Note 11: In version 13, recalculation of delays related to the sized gates is ad
 
 Note 12 (Aug. 11, 2015): This program is used to generate data in JxCDC manuscript in Aug. 8, 2015. Three sets of technology parameters were used with the [double SpacingDis (from mylib.cpp)] parameter set to the same value as the corresponding spin diffusion lengths in the gate.h. For fast simulation speed, calculation and output of Power and Area is disabled by commenting function [vector<double> PowerArea = PowerAreaCalc(gate_vec0);] in row 653 of mylib.cpp and turn off the output line a few rows later [outfile<<CURRENT_ITERATION+1<<" "<<MaxDelay0<<" "<<PowerArea[0]<<" "<<PowerArea[1]<<endl;]. 
 
-Note 13 (Oct. 16, 2015): New models considering the contacts and grounds were added to the delay calculation part.o
+Note 13 (Oct. 16, 2015): New models considering the contacts and grounds were added to the delay calculation part.o.
 
-Note 14 copying a clone to local
+Note 14: copying a clone to local.
+
+Note 15 (Oct. 1, 2017): Reformatted the README.md and added ISCAS benchmarks to the repository. 
 
 

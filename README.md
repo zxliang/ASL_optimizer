@@ -11,11 +11,15 @@ License: by Zhaoxin Liang
 
 --------------------------
 
+Note 16 (Feb. 11, 2018):
+
+1. Makefile updated and source/header reorganized.
+
 Note 15 (Oct. 1, 2017): 
 
 1. Reformatted the README.md and added ISCAS benchmarks to the repository. 
 
-2. Created a bash version execution script as iscas_benchmarks.sh
+2. Created a bash version execution script as iscas_benchmarks.sh.
 
 --------------------------
 
